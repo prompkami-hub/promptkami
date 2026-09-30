@@ -9,6 +9,7 @@ en: {
   meta_title: "promptkami — Daily AI Prompt Packs | One Effect. One Pack. Every Day.",
   meta_description: "Get the exact AI prompt behind today's viral video effect. Tested on Midjourney, DALL·E & more — copy, paste, generate. New pack drops daily.",
   lang_label: "Language",
+  nav_free: "Free",
   nav_drop: "Today's Drop",
   nav_pricing: "Pricing",
   nav_faq: "FAQ",
@@ -18,6 +19,10 @@ en: {
   hero_sub: "We test AI prompts so you don't have to. Grab today's drop, paste it into your favorite AI tool, and get the exact effect you saw in the video.",
   hero_cta_free: "Get today's free pack",
   hero_cta_pricing: "See pricing",
+
+  free_strip_title: "Today's free pack",
+  free_strip_desc: "A lite taste of today's drop — free forever, new every day.",
+  free_nocard: "No credit card required",
 
   drop_label: "Today's drop",
   drop_title: "Cinematic Silhouette Portrait",
@@ -91,6 +96,7 @@ zh: {
   meta_title: "promptkami 提示词之神｜每日 AI 提示词包",
   meta_description: "拿到今天爆款视频同款 AI 提示词。Midjourney、DALL·E 等主流工具实测，复制粘贴即出同款效果。每天掉落一套，单包 $0.99 起。",
   lang_label: "语言",
+  nav_free: "免费",
   nav_drop: "今日掉落",
   nav_pricing: "价格",
   nav_faq: "常见问题",
@@ -100,6 +106,10 @@ zh: {
   hero_sub: "我们替你测好 AI 提示词。拿走今天的掉落，粘贴进你常用的 AI 工具，视频里什么效果，你就得到什么效果。",
   hero_cta_free: "领取今日免费版",
   hero_cta_pricing: "查看价格",
+
+  free_strip_title: "今日免费版",
+  free_strip_desc: "今日掉落的精简版——永久免费，每天上新。",
+  free_nocard: "无需信用卡",
 
   drop_label: "今日掉落",
   drop_title: "电影感剪影人像",
@@ -173,6 +183,7 @@ ja: {
   meta_title: "promptkami｜毎日更新のAIプロンプトパック",
   meta_description: "今日の話題動画と同じ効果を再現するAIプロンプト。Midjourneyなどで実測済み、コピペで生成できます。毎日新しいパックを追加。単品$0.99〜。",
   lang_label: "言語",
+  nav_free: "無料",
   nav_drop: "今日のドロップ",
   nav_pricing: "料金",
   nav_faq: "よくある質問",
@@ -182,6 +193,10 @@ ja: {
   hero_sub: "AIプロンプトは私たちがテスト済み。今日のドロップを手に入れて、お気に入りのAIツールに貼るだけ。動画と同じ効果が再現できます。",
   hero_cta_free: "今日の無料版を入手",
   hero_cta_pricing: "料金を見る",
+
+  free_strip_title: "今日の無料版",
+  free_strip_desc: "今日のドロップのライト版——永久無料、毎日更新。",
+  free_nocard: "クレジットカード不要",
 
   drop_label: "今日のドロップ",
   drop_title: "シネマティック・シルエットポートレート",
@@ -255,6 +270,7 @@ es: {
   meta_title: "promptkami｜Packs de prompts IA cada día",
   meta_description: "Obtén el prompt de IA exacto del efecto viral de hoy. Probado en Midjourney, DALL·E y más: copia, pega y genera. Un pack nuevo cada día desde $0.99.",
   lang_label: "Idioma",
+  nav_free: "Gratis",
   nav_drop: "Drop de hoy",
   nav_pricing: "Precios",
   nav_faq: "Preguntas",
@@ -264,6 +280,10 @@ es: {
   hero_sub: "Probamos los prompts de IA por ti. Toma el drop de hoy, pégalo en tu herramienta de IA favorita y obtén exactamente el efecto que viste en el video.",
   hero_cta_free: "Obtener el pack gratis de hoy",
   hero_cta_pricing: "Ver precios",
+
+  free_strip_title: "Pack gratis de hoy",
+  free_strip_desc: "Una probada lite del drop de hoy — gratis para siempre, nuevo cada día.",
+  free_nocard: "Sin tarjeta de crédito",
 
   drop_label: "Drop de hoy",
   drop_title: "Retrato de silueta cinematográfica",
