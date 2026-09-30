@@ -134,11 +134,15 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem; }
 }
 /* larger hanko seal for the strip */
 .seal-lg { width: 3.1em; height: 3.1em; font-size: 1.05rem; border-radius: 6px; flex: none; }
-.free-strip-text { flex: 1 1 240px; }
-.free-strip-text h2 { font-size: 1.5rem; }
-.free-strip-text p { color: var(--muted); margin-top: 0.35rem; font-size: 0.98rem; }
-.free-strip-cta { flex: 1 1 320px; max-width: 560px; }
+.free-head { flex: 1 1 220px; }
+.free-head h2 { font-size: 1.5rem; }
+.free-head p { color: var(--muted); margin-top: 0.35rem; font-size: 0.98rem; }
+.free-strip-cta { flex: 1 1 300px; max-width: 560px; }
 .free-strip-cta .fine { margin-top: 0.55rem; }
+/* teaser + checklist sit below the form */
+.free-more { flex: 1 1 100%; display: flex; gap: 1.6rem; align-items: flex-start; flex-wrap: wrap; }
+.free-more .free-tease { flex: 1 1 280px; margin-top: 0; }
+.free-more .free-list { flex: 1 1 220px; margin-top: 0; align-self: center; }
 
 /* email capture form */
 .free-form { display: flex; gap: 0.6rem; }
@@ -303,10 +307,14 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem; }
   .lang-label { display: none; }
   .section { padding: 3rem 0 0.5rem; }
   .hero { padding: 3rem 0 3rem; }
-  .free-strip-inner { flex-direction: column; text-align: center; }
-  .free-visual { flex: none; width: 100%; max-width: 100%; }
+  .free-strip { padding: 1.5rem 1.25rem; }
+  .free-strip-inner { flex-direction: column; align-items: stretch; text-align: center; gap: 1.1rem; }
+  .free-visual { order: 1; flex: none; width: 100%; max-width: 100%; }
   .free-img { aspect-ratio: 16 / 9; }
-  .free-strip-cta { max-width: none; width: 100%; }
+  .free-head { order: 2; }
+  .free-strip-cta { order: 3; max-width: none; width: 100%; }
+  .free-more { order: 4; flex-direction: column; gap: 1.1rem; }
+  .free-more .free-list { align-self: stretch; }
   .free-form { flex-direction: column; }
   .free-form .btn { width: 100%; }
   .free-strip-cta .btn { width: 100%; }
