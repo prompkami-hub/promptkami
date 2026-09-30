@@ -145,15 +145,20 @@ function initFreeModal() {
     e.preventDefault();
     const email = document.getElementById('freeModalEmail').value.trim();
     /* Fire-and-forget lead capture: every signup lands in the owner's
-       inbox at pawfunstudios@gmail.com. Never block the user on it —
+       Google Sheet (promptkami-leads). Never block the user on it —
        the prompt unlocks instantly either way. */
     try {
-      const fd = new FormData();
-      fd.append('email', email);
-      fd.append('_subject', 'promptkami 新订阅：免费包领取');
-      fd.append('_template', 'table');
-      fd.append('_captcha', 'false');
-      await fetch('https://formsubmit.co/ajax/pawfunstudios@gmail.com', { method: 'POST', body: fd });
+      const dropEl = document.querySelector('[data-i18n="drop_title"]');
+      await fetch('https://script.google.com/macros/s/AKfycbzmGctc6MJSE8eARyc3aMQEmtqbqiITrBbqG0dofgm86tJqCkaiKCJzXEVIiBahq1xuaQ/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({
+          email: email,
+          drop: dropEl ? dropEl.textContent.trim() : '',
+          lang: document.documentElement.lang || 'en'
+        })
+      });
     } catch (err) { /* lead endpoint down — prompt still unlocks */ }
     stepEmail.hidden = true;
     stepPrompt.hidden = false;
