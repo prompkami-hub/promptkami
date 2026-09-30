@@ -304,7 +304,8 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem; }
   .section { padding: 3rem 0 0.5rem; }
   .hero { padding: 3rem 0 3rem; }
   .free-strip-inner { flex-direction: column; text-align: center; }
-  .free-visual { flex: 1 1 100%; max-width: 340px; margin: 0 auto; }
+  .free-visual { flex: none; width: 100%; max-width: 100%; }
+  .free-img { aspect-ratio: 16 / 9; }
   .free-strip-cta { max-width: none; width: 100%; }
   .free-form { flex-direction: column; }
   .free-form .btn { width: 100%; }
