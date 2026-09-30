@@ -102,7 +102,76 @@ function applyLang(lang) {
   try { localStorage.setItem('pd_lang', lang); } catch (e) { /* ignore */ }
 }
 
-/* ---------------- init ---------------- */
+/* ---------------- free modal: email gate -> instant prompt ---------------- */
+
+function currentDict() {
+  try {
+    const saved = localStorage.getItem('pd_lang');
+    if (saved && I18N[saved]) return I18N[saved];
+  } catch (e) { /* ignore */ }
+  return I18N.en;
+}
+
+function initFreeModal() {
+  const modal = document.getElementById('freeModal');
+  const openBtn = document.getElementById('freeOpenBtn');
+  const closeBtn = document.getElementById('freeModalClose');
+  const stepEmail = document.getElementById('modalStepEmail');
+  const stepPrompt = document.getElementById('modalStepPrompt');
+  const copyBtn = document.getElementById('copyPromptBtn');
+  if (!modal || !openBtn) return;
+
+  function openModal() {
+    stepEmail.hidden = false;
+    stepPrompt.hidden = true;
+    copyBtn.textContent = currentDict().modal_copy || 'Copy prompt';
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  openBtn.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !modal.hidden) closeModal();
+  });
+
+  document.getElementById('freeModalForm').addEventListener('submit', async e => {
+    e.preventDefault();
+    const email = document.getElementById('freeModalEmail').value.trim();
+    /* Fire-and-forget lead capture: every signup lands in the owner's
+       inbox at pawfunstudios@gmail.com. Never block the user on it —
+       the prompt unlocks instantly either way. */
+    try {
+      const fd = new FormData();
+      fd.append('email', email);
+      fd.append('_subject', 'promptkami 新订阅：免费包领取');
+      fd.append('_template', 'table');
+      fd.append('_captcha', 'false');
+      await fetch('https://formsubmit.co/ajax/pawfunstudios@gmail.com', { method: 'POST', body: fd });
+    } catch (err) { /* lead endpoint down — prompt still unlocks */ }
+    stepEmail.hidden = true;
+    stepPrompt.hidden = false;
+  });
+
+  copyBtn.addEventListener('click', async () => {
+    const text = document.getElementById('freePromptText').textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (_) { /* ignore */ }
+      ta.remove();
+    }
+    copyBtn.textContent = currentDict().modal_copied || 'Copied!';
+  });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   renderPrices();
@@ -111,14 +180,5 @@ document.addEventListener('DOMContentLoaded', () => {
   if (switcher) {
     switcher.addEventListener('change', e => applyLang(e.target.value));
   }
-  /* After a FormSubmit signup redirects back with ?subscribed=1,
-     show the "check your inbox" note and scroll to the free strip. */
-  try {
-    if (new URLSearchParams(location.search).get('subscribed') === '1') {
-      const done = document.getElementById('freeDone');
-      if (done) done.hidden = false;
-      const free = document.getElementById('free');
-      if (free) free.scrollIntoView();
-    }
-  } catch (e) { /* ignore */ }
+  initFreeModal();
 });
