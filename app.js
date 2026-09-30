@@ -135,6 +135,8 @@ function initFreeModal() {
   openBtn.addEventListener('click', openModal);
   closeBtn.addEventListener('click', closeModal);
   modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  const upsell = document.getElementById('modalUpsell');
+  if (upsell) upsell.addEventListener('click', closeModal);
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && !modal.hidden) closeModal();
   });
