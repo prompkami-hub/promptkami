@@ -21,7 +21,7 @@ en: {
   hero_cta_pricing: "See pricing",
 
   free_strip_title: "Today's free pack",
-  free_strip_desc: "Drop your email and today's lite prompt lands straight in your inbox — free forever, new every day.",
+  free_strip_desc: "Today's lite prompt — free forever, new daily.",
   free_nocard: "No credit card required",
   free_form_ph: "you@example.com",
   free_form_cta: "Send to my inbox",
@@ -125,7 +125,7 @@ zh: {
   hero_cta_pricing: "查看价格",
 
   free_strip_title: "今日免费版",
-  free_strip_desc: "留下邮箱，今日精简版提示词直接发到你邮箱——永久免费，每天上新。",
+  free_strip_desc: "今日精简版免费领，永久免费·每天上新。",
   free_nocard: "无需信用卡",
   free_form_ph: "you@example.com",
   free_form_cta: "发送到我的邮箱",
@@ -229,7 +229,7 @@ ja: {
   hero_cta_pricing: "料金を見る",
 
   free_strip_title: "今日の無料版",
-  free_strip_desc: "メールアドレスを登録すると、今日のライト版プロンプトを直接お届け——永久無料、毎日更新。",
+  free_strip_desc: "今日のライト版を無料で — 永久無料・毎日更新。",
   free_nocard: "クレジットカード不要",
   free_form_ph: "you@example.com",
   free_form_cta: "メールで受け取る",
@@ -333,7 +333,7 @@ es: {
   hero_cta_pricing: "Ver precios",
 
   free_strip_title: "Pack gratis de hoy",
-  free_strip_desc: "Deja tu correo y el prompt lite de hoy llega directo a tu bandeja — gratis para siempre, nuevo cada día.",
+  free_strip_desc: "El prompt lite de hoy — gratis para siempre, nuevo cada día.",
   free_nocard: "Sin tarjeta de crédito",
   free_form_ph: "you@example.com",
   free_form_cta: "Enviar a mi correo",
