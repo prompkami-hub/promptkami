@@ -1,4 +1,4 @@
-# PROMPTDROP — Static Prompt-Pack Store
+# promptkami （提示词之神） — Static Prompt-Pack Store
 
 A complete static website (pure HTML/CSS/JS, no backend, no build step) for
 selling AI prompt packs. Works by opening `index.html` directly or on any
@@ -17,18 +17,18 @@ static host. Ready for **GitHub Pages**.
 
 ## Deploy to GitHub Pages (5 steps)
 
-1. **Create a repo** on GitHub (e.g. `promptdrop`), set it to Public.
-2. **Upload all four files** (`index.html`, `styles.css`, `i18n.js`, `app.js`)
+1. **Create a repo** on GitHub (e.g. `promptkami`), set it to Public.
+2. **Upload all site files** (`index.html`, `styles.css`, `i18n.js`, `app.js`, `sitemap.xml`, `robots.txt`)
    to the repo root — via web upload or:
    ```bash
    git init && git add . && git commit -m "launch"
    git branch -M main
-   git remote add origin https://github.com/YOURNAME/promptdrop.git
+   git remote add origin https://github.com/YOURNAME/promptkami.git
    git push -u origin main
    ```
 3. **Enable Pages**: repo → *Settings* → *Pages* → *Deploy from a branch* →
    branch `main`, folder `/ (root)` → Save.
-4. **Wait ~1 minute**, then open `https://YOURNAME.github.io/promptdrop/`.
+4. **Wait ~1 minute**, then open `https://YOURNAME.github.io/promptkami/`.
 5. **Custom domain (optional)**: Pages → *Custom domain* → enter your domain,
    then add the DNS records GitHub shows you.
 
@@ -70,10 +70,9 @@ languages; never rename or delete a key or that language's UI will fall back
 to blank. HTML uses `data-i18n="key"` attributes — add a new key to all four
 blocks, then reference it the same way.
 
-## Where to rename the brand
+## Brand
 
-Search all files for **`PROMPTDROP`** and replace with your brand name.
-(HTML comments mark the spots.)
+The brand is **promptkami** （提示词之神）, already applied across all files.
 
 ## Notes
 
