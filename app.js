@@ -13,7 +13,7 @@ const CONFIG = {
   currency: 'USD',
   freePrice: 0,
   singlePrice: 0.99,
-  monthlyPrice: 1.49
+  monthlyPrice: 4.99
 };
 
 /* Currency symbols for display. Add more as needed. */
