@@ -144,6 +144,51 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem; }
 .free-more .free-tease { flex: 1 1 280px; margin-top: 0; }
 .free-more .free-list { flex: 1 1 220px; margin-top: 0; align-self: center; }
 
+/* ---------- free modal: email gate -> instant prompt ---------- */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(10, 8, 6, 0.72);
+  display: flex; align-items: center; justify-content: center;
+  padding: 1.25rem;
+}
+.modal-overlay[hidden] { display: none; }
+.modal {
+  position: relative; width: 100%; max-width: 520px;
+  max-height: 88vh; overflow-y: auto;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2rem 1.75rem;
+}
+.modal-x {
+  position: absolute; top: 0.6rem; right: 0.9rem;
+  background: none; border: none; color: var(--muted);
+  font-size: 1.7rem; line-height: 1; cursor: pointer; padding: 0.2rem;
+}
+.modal-x:hover { color: var(--text); }
+.modal h3 { font-size: 1.3rem; margin-bottom: 0.5rem; padding-right: 1.5rem; }
+.modal p { color: var(--muted); font-size: 0.95rem; }
+.modal form { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1.1rem; }
+.modal input[type="email"] {
+  width: 100%; padding: 0.8rem 1rem; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--bg);
+  color: var(--text); font-size: 1rem; font-family: var(--sans);
+}
+.modal input[type="email"]::placeholder { color: var(--muted); }
+.modal input[type="email"]:focus { outline: none; border-color: var(--vermillion); }
+.modal form .btn { width: 100%; }
+.modal .fine { margin-top: 0.9rem; text-align: center; }
+.prompt-box {
+  margin: 1.1rem 0; border: 1px solid var(--border); border-radius: 8px;
+  background: var(--bg); padding: 1rem 1.1rem;
+  max-height: 300px; overflow-y: auto;
+}
+.prompt-box pre {
+  white-space: pre-wrap; word-break: break-word;
+  font-size: 0.85rem; line-height: 1.65; color: var(--text);
+  font-family: inherit; margin: 0;
+}
+#copyPromptBtn { width: 100%; }
+.btn-free { width: 100%; font-size: 1.05rem; padding: 0.95rem 1.8rem; }
+
 /* email capture form */
 .free-form { display: flex; gap: 0.6rem; }
 .free-form input[type="email"] {
