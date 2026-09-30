@@ -62,7 +62,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260930c">
+<link rel="stylesheet" href="styles.css?v=20260930d">
 </head>
 <body>
 
@@ -119,44 +119,7 @@
         <p data-i18n="free_strip_desc">A lite taste of today's drop — free forever, new every day.</p>
       </div>
       <div class="free-strip-cta">
-        <!-- FREE CAPTURE: email in -> today's lite prompt auto-emailed via
-             FormSubmit _autoresponse. Owner gets every signup at
-             pawfunstudios@gmail.com. First-ever submission triggers a one-time
-             activation email to that address — click it once, then it's fully
-             automatic. Daily job: refresh the _autoresponse text with the new drop. -->
-        <form class="free-form" action="https://formsubmit.co/pawfunstudios@gmail.com" method="POST">
-          <input type="email" name="email" required data-i18n-ph="free_form_ph" placeholder="you@example.com" aria-label="email">
-          <input type="hidden" name="_subject" value="promptkami 新订阅：免费包领取">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://prompkami-hub.github.io/promptkami/?subscribed=1">
-          <input type="hidden" name="_autoresponse" value="Your free promptkami pack — Cinematic Silhouette Portrait
-
-Copy, paste, generate:
-
-EN:
-cinematic backlit silhouette portrait of a person at sunset, dramatic rim light tracing the outline, deep rich shadows, subtle film grain, moody atmosphere, ultra high contrast, 85mm lens aesthetic
-
-中文：
-电影感逆光剪影人像，人物立于日落之前，戏剧性轮廓光勾勒身形，深邃浓郁的阴影，细腻胶片颗粒，氛围感拉满，超高对比度，85mm镜头质感
-
-Quick settings:
-- Midjourney: append --ar 16:9 --style raw --v 6.1
-- DALL-E / Jimeng / Tongyi: paste as-is
-
-Want the FULL pack? ($0.99, yours forever)
-Complete prompt + per-tool settings + 3 bonus variations:
-https://prompkami-hub.github.io/promptkami/#drop
-
-Or go unlimited ($1.49/mo) — every daily drop included:
-https://prompkami-hub.github.io/promptkami/#pricing
-
-A new free pack drops tomorrow. See you then.
-- promptkami 提示词之神">
-          <button class="btn btn-primary" type="submit" data-i18n="free_form_cta">Send to my inbox</button>
-        </form>
-        <p class="free-note" data-i18n="free_form_note">The full free prompt lands in your inbox within a minute.</p>
-        <p class="free-done" id="freeDone" hidden data-i18n="free_done">Done — check your inbox, your free pack is on its way.</p>
+        <button class="btn btn-primary btn-free" id="freeOpenBtn" data-i18n="free_btn">Get my free prompt</button>
         <p class="fine" data-i18n="free_nocard">No credit card required</p>
       </div>
       <div class="free-more">
@@ -354,7 +317,37 @@ A new free pack drops tomorrow. See you then.
   <p class="fine">© 2026 promptkami · <span data-i18n="footer_rights">All rights reserved.</span></p>
 </footer>
 
-<script src="i18n.js?v=20260930c"></script>
-<script src="app.js?v=20260930c"></script>
+
+  <!-- FREE MODAL: email gate -> instant copyable prompt -->
+  <div class="modal-overlay" id="freeModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="freeModalTitle">
+      <button class="modal-x" id="freeModalClose" aria-label="close">&times;</button>
+      <div class="modal-step" id="modalStepEmail">
+        <h3 id="freeModalTitle" data-i18n="modal_title">Get today's free prompt</h3>
+        <p data-i18n="modal_desc">Drop your email and the full lite prompt unlocks instantly.</p>
+        <form id="freeModalForm">
+          <input type="email" id="freeModalEmail" required data-i18n-ph="free_form_ph" placeholder="you@example.com" aria-label="email">
+          <button class="btn btn-primary" type="submit" data-i18n="modal_cta">Unlock my prompt</button>
+        </form>
+        <p class="fine" data-i18n="free_nocard">No credit card required</p>
+      </div>
+      <div class="modal-step" id="modalStepPrompt" hidden>
+        <h3 data-i18n="modal_done_title">Your free prompt</h3>
+        <div class="prompt-box"><pre id="freePromptText">EN:
+cinematic backlit silhouette portrait of a person at sunset, dramatic rim light tracing the outline, deep rich shadows, subtle film grain, moody atmosphere, ultra high contrast, 85mm lens aesthetic
+
+中文：
+电影感逆光剪影人像，人物立于日落之前，戏剧性轮廓光勾勒身形，深邃浓郁的阴影，细腻胶片颗粒，氛围感拉满，超高对比度，85mm镜头质感
+
+QUICK SETTINGS:
+- Midjourney: append --ar 16:9 --style raw --v 6.1
+- DALL-E / 即梦 / 通义万相: paste as-is</pre></div>
+        <button class="btn btn-primary" id="copyPromptBtn" data-i18n="modal_copy">Copy prompt</button>
+        <p class="free-note" data-i18n="modal_done_note">Loved it? The full pack ($0.99) adds per-tool settings + 3 bonus variations.</p>
+      </div>
+    </div>
+  </div>
+  <script src="i18n.js?v=20260930d"></script>
+<script src="app.js?v=20260930d"></script>
 </body>
 </html>
