@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prompkami-hub.github.io/promptkami/sitemap.xml
+Sitemap: https://promptkami.com/sitemap.xml
