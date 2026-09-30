@@ -137,8 +137,22 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem; }
 .free-strip-text { flex: 1 1 240px; }
 .free-strip-text h2 { font-size: 1.5rem; }
 .free-strip-text p { color: var(--muted); margin-top: 0.35rem; font-size: 0.98rem; }
-.free-strip-cta { flex: none; text-align: center; }
+.free-strip-cta { flex: 1 1 320px; max-width: 560px; }
 .free-strip-cta .fine { margin-top: 0.55rem; }
+
+/* email capture form */
+.free-form { display: flex; gap: 0.6rem; }
+.free-form input[type="email"] {
+  flex: 1 1 200px; min-width: 0;
+  padding: 0.8rem 1rem; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--bg);
+  color: var(--text); font-size: 1rem; font-family: var(--sans);
+}
+.free-form input[type="email"]::placeholder { color: var(--muted); }
+.free-form input[type="email"]:focus { outline: none; border-color: var(--vermillion); }
+.free-form .btn { flex: none; white-space: nowrap; }
+.free-note { margin-top: 0.6rem; font-size: 0.92rem; color: var(--muted); }
+.free-done { margin-top: 0.6rem; font-size: 0.95rem; color: var(--gold); }
 
 /* ---------- buttons ---------- */
 .btn {
@@ -254,5 +268,8 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem; }
   .section { padding: 3rem 0 0.5rem; }
   .hero { padding: 3rem 0 3rem; }
   .free-strip-inner { flex-direction: column; text-align: center; }
+  .free-strip-cta { max-width: none; width: 100%; }
+  .free-form { flex-direction: column; }
+  .free-form .btn { width: 100%; }
   .free-strip-cta .btn { width: 100%; }
 }

@@ -114,8 +114,44 @@
         <p data-i18n="free_strip_desc">A lite taste of today's drop — free forever, new every day.</p>
       </div>
       <div class="free-strip-cta">
-        <!-- FREE STRIP: same placeholder as the pricing Free tier (mailto) -->
-        <a class="btn btn-primary" href="mailto:hello@example.com?subject=Free%20daily%20pack" data-i18n="free_cta">Download free</a>
+        <!-- FREE CAPTURE: email in -> today's lite prompt auto-emailed via
+             FormSubmit _autoresponse. Owner gets every signup at
+             lee.wendy.90@gmail.com. First-ever submission triggers a one-time
+             activation email to that address — click it once, then it's fully
+             automatic. Daily job: refresh the _autoresponse text with the new drop. -->
+        <form class="free-form" action="https://formsubmit.co/lee.wendy.90@gmail.com" method="POST">
+          <input type="email" name="email" required data-i18n-ph="free_form_ph" placeholder="you@example.com" aria-label="email">
+          <input type="hidden" name="_subject" value="promptkami 新订阅：免费包领取">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://prompkami-hub.github.io/promptkami/?subscribed=1">
+          <input type="hidden" name="_autoresponse" value="Your free promptkami pack — Cinematic Silhouette Portrait
+
+Copy, paste, generate:
+
+EN:
+cinematic backlit silhouette portrait of a person at sunset, dramatic rim light tracing the outline, deep rich shadows, subtle film grain, moody atmosphere, ultra high contrast, 85mm lens aesthetic
+
+中文：
+电影感逆光剪影人像，人物立于日落之前，戏剧性轮廓光勾勒身形，深邃浓郁的阴影，细腻胶片颗粒，氛围感拉满，超高对比度，85mm镜头质感
+
+Quick settings:
+- Midjourney: append --ar 16:9 --style raw --v 6.1
+- DALL-E / Jimeng / Tongyi: paste as-is
+
+Want the FULL pack? ($0.99, yours forever)
+Complete prompt + per-tool settings + 3 bonus variations:
+https://prompkami-hub.github.io/promptkami/#drop
+
+Or go unlimited ($1.49/mo) — every daily drop included:
+https://prompkami-hub.github.io/promptkami/#pricing
+
+A new free pack drops tomorrow. See you then.
+- promptkami 提示词之神">
+          <button class="btn btn-primary" type="submit" data-i18n="free_form_cta">Send to my inbox</button>
+        </form>
+        <p class="free-note" data-i18n="free_form_note">The full free prompt lands in your inbox within a minute.</p>
+        <p class="free-done" id="freeDone" hidden data-i18n="free_done">Done — check your inbox, your free pack is on its way.</p>
         <p class="fine" data-i18n="free_nocard">No credit card required</p>
       </div>
     </div>
@@ -217,9 +253,8 @@
           <li data-i18n="free_f2">Watermarked preview images</li>
           <li data-i18n="free_f3">A new drop every day</li>
         </ul>
-        <!-- FREE TIER: point this at your file host, email signup form, or
-             keep the mailto below as a placeholder. -->
-        <a class="btn btn-ghost btn-block" href="mailto:hello@example.com?subject=Free%20daily%20pack" data-i18n="free_cta">Download free</a>
+        <!-- FREE TIER: scrolls up to the email capture form in #free -->
+        <a class="btn btn-ghost btn-block" href="#free" data-i18n="free_cta">Download free</a>
       </article>
 
       <article class="tier">

@@ -85,6 +85,10 @@ function applyLang(lang) {
     const key = el.getAttribute('data-i18n-aria');
     if (key in dict) el.setAttribute('aria-label', dict[key]);
   });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (key in dict) el.setAttribute('placeholder', dict[key]);
+  });
   document.documentElement.lang = LANG_ATTR[lang] || 'en';
   document.title = dict.meta_title || document.title;
   /* Keep SEO meta in sync with the active language. */
@@ -107,4 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (switcher) {
     switcher.addEventListener('change', e => applyLang(e.target.value));
   }
+  /* After a FormSubmit signup redirects back with ?subscribed=1,
+     show the "check your inbox" note and scroll to the free strip. */
+  try {
+    if (new URLSearchParams(location.search).get('subscribed') === '1') {
+      const done = document.getElementById('freeDone');
+      if (done) done.hidden = false;
+      const free = document.getElementById('free');
+      if (free) free.scrollIntoView();
+    }
+  } catch (e) { /* ignore */ }
 });

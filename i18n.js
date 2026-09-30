@@ -21,8 +21,12 @@ en: {
   hero_cta_pricing: "See pricing",
 
   free_strip_title: "Today's free pack",
-  free_strip_desc: "A lite taste of today's drop — free forever, new every day.",
+  free_strip_desc: "Drop your email and today's lite prompt lands straight in your inbox — free forever, new every day.",
   free_nocard: "No credit card required",
+  free_form_ph: "you@example.com",
+  free_form_cta: "Send to my inbox",
+  free_form_note: "The full free prompt lands in your inbox within a minute.",
+  free_done: "Done — check your inbox, your free pack is on its way.",
 
   drop_label: "Today's drop",
   drop_title: "Cinematic Silhouette Portrait",
@@ -108,8 +112,12 @@ zh: {
   hero_cta_pricing: "查看价格",
 
   free_strip_title: "今日免费版",
-  free_strip_desc: "今日掉落的精简版——永久免费，每天上新。",
+  free_strip_desc: "留下邮箱，今日精简版提示词直接发到你邮箱——永久免费，每天上新。",
   free_nocard: "无需信用卡",
+  free_form_ph: "you@example.com",
+  free_form_cta: "发送到我的邮箱",
+  free_form_note: "完整免费提示词一分钟内发到你的邮箱。",
+  free_done: "搞定——去邮箱查收吧，免费包已经在路上了。",
 
   drop_label: "今日掉落",
   drop_title: "电影感剪影人像",
@@ -195,8 +203,12 @@ ja: {
   hero_cta_pricing: "料金を見る",
 
   free_strip_title: "今日の無料版",
-  free_strip_desc: "今日のドロップのライト版——永久無料、毎日更新。",
+  free_strip_desc: "メールアドレスを登録すると、今日のライト版プロンプトを直接お届け——永久無料、毎日更新。",
   free_nocard: "クレジットカード不要",
+  free_form_ph: "you@example.com",
+  free_form_cta: "メールで受け取る",
+  free_form_note: "無料プロンプト全文を1分以内にメールでお届けします。",
+  free_done: "送信しました——メールをチェックしてください。",
 
   drop_label: "今日のドロップ",
   drop_title: "シネマティック・シルエットポートレート",
@@ -282,8 +294,12 @@ es: {
   hero_cta_pricing: "Ver precios",
 
   free_strip_title: "Pack gratis de hoy",
-  free_strip_desc: "Una probada lite del drop de hoy — gratis para siempre, nuevo cada día.",
+  free_strip_desc: "Deja tu correo y el prompt lite de hoy llega directo a tu bandeja — gratis para siempre, nuevo cada día.",
   free_nocard: "Sin tarjeta de crédito",
+  free_form_ph: "you@example.com",
+  free_form_cta: "Enviar a mi correo",
+  free_form_note: "El prompt gratis completo llega a tu correo en un minuto.",
+  free_done: "Listo: revisa tu correo, tu pack gratis va en camino.",
 
   drop_label: "Drop de hoy",
   drop_title: "Retrato de silueta cinematográfica",
