@@ -1,12 +1,13 @@
 /* ============================================================
-   PROMPTDROP — translations
+   promptkami （提示词之神） — translations
    HOW TO EDIT: find the language block (en / zh / ja / es) and
    edit the text after the colon. Keys must stay identical across
    all four languages — do not rename or delete keys.
    ============================================================ */
 const I18N = {
 en: {
-  meta_title: "PROMPTDROP — Daily AI Prompt Packs",
+  meta_title: "promptkami — Daily AI Prompt Packs | One Effect. One Pack. Every Day.",
+  meta_description: "Get the exact AI prompt behind today's viral video effect. Tested on Midjourney, DALL·E & more — copy, paste, generate. New pack drops daily.",
   lang_label: "Language",
   nav_drop: "Today's Drop",
   nav_pricing: "Pricing",
@@ -30,6 +31,7 @@ en: {
   drop_price_note: "One-time payment · Yours forever",
 
   preview_label: "EFFECT PREVIEW",
+  preview_aria: "Effect preview image",
 
   archive_title: "Recent drops",
   archive_sub: "Missed a day? Every past pack is still available.",
@@ -86,7 +88,8 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
-  meta_title: "PROMPTDROP — 每天一套 AI 提示词",
+  meta_title: "promptkami 提示词之神｜每日 AI 提示词包",
+  meta_description: "拿到今天爆款视频同款 AI 提示词。Midjourney、DALL·E 等主流工具实测，复制粘贴即出同款效果。每天掉落一套，单包 $0.99 起。",
   lang_label: "语言",
   nav_drop: "今日掉落",
   nav_pricing: "价格",
@@ -110,6 +113,7 @@ zh: {
   drop_price_note: "一次付费 · 永久拥有",
 
   preview_label: "效果预览",
+  preview_aria: "效果预览图",
 
   archive_title: "往期掉落",
   archive_sub: "错过哪天？往期每一套都还能买。",
@@ -166,7 +170,8 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
-  meta_title: "PROMPTDROP — 毎日のAIプロンプトパック",
+  meta_title: "promptkami｜毎日更新のAIプロンプトパック",
+  meta_description: "今日の話題動画と同じ効果を再現するAIプロンプト。Midjourneyなどで実測済み、コピペで生成できます。毎日新しいパックを追加。単品$0.99〜。",
   lang_label: "言語",
   nav_drop: "今日のドロップ",
   nav_pricing: "料金",
@@ -190,6 +195,7 @@ ja: {
   drop_price_note: "買い切り · 永久利用",
 
   preview_label: "エフェクトプレビュー",
+  preview_aria: "エフェクトプレビュー画像",
 
   archive_title: "過去のドロップ",
   archive_sub: "見逃した日があっても大丈夫。過去のパックも購入できます。",
@@ -246,7 +252,8 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
-  meta_title: "PROMPTDROP — Packs diarios de prompts de IA",
+  meta_title: "promptkami｜Packs de prompts IA cada día",
+  meta_description: "Obtén el prompt de IA exacto del efecto viral de hoy. Probado en Midjourney, DALL·E y más: copia, pega y genera. Un pack nuevo cada día desde $0.99.",
   lang_label: "Idioma",
   nav_drop: "Drop de hoy",
   nav_pricing: "Precios",
@@ -270,6 +277,7 @@ es: {
   drop_price_note: "Pago único · Tuyo para siempre",
 
   preview_label: "VISTA PREVIA",
+  preview_aria: "Vista previa del efecto",
 
   archive_title: "Drops anteriores",
   archive_sub: "¿Te perdiste un día? Todos los packs anteriores siguen disponibles.",
