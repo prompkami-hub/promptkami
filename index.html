@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROMPTDROP — Daily AI Prompt Packs</title>
+<meta name="description" content="One video effect. One prompt pack. Every day. Tested AI prompts, ready to paste.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     BRAND NAME: "PROMPTDROP" is a neutral placeholder.
+     Search this file for PROMPTDROP and replace with your brand.
+     ============================================================ -->
+<header class="site-header">
+  <a class="brand" href="#top">PROMPTDROP</a>
+  <nav class="site-nav">
+    <a href="#drop" data-i18n="nav_drop">Today's Drop</a>
+    <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+    <a href="#faq" data-i18n="nav_faq">FAQ</a>
+  </nav>
+  <label class="lang-wrap">
+    <span class="lang-label" data-i18n="lang_label">Language</span>
+    <select id="langSwitcher" aria-label="language">
+      <option value="en">English</option>
+      <option value="zh">简体中文</option>
+      <option value="ja">日本語</option>
+      <option value="es">Español (MX)</option>
+    </select>
+  </label>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="pill" data-i18n="hero_badge">Fresh prompt pack every day</span>
+      <h1 data-i18n="hero_title">One video effect. One prompt pack. Every day.</h1>
+      <p class="lede" data-i18n="hero_sub">We test AI prompts so you don't have to. Grab today's drop, paste it into your favorite AI tool, and get the exact effect you saw in the video.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#drop" data-i18n="hero_cta_free">Get today's free pack</a>
+        <a class="btn btn-ghost" href="#pricing" data-i18n="hero_cta_pricing">See pricing</a>
+      </div>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+  </section>
+
+  <!-- TODAY'S DROP -->
+  <section id="drop" class="section drop">
+    <div class="section-head">
+      <span class="kicker" data-i18n="drop_label">Today's drop</span>
+      <h2 data-i18n="drop_title">Cinematic Silhouette Portrait</h2>
+      <p class="effect" data-i18n="drop_effect">Turn any photo into a dramatic backlit-silhouette poster.</p>
+    </div>
+    <div class="drop-card">
+      <div class="preview preview-a">
+        <span class="preview-tag" data-i18n="preview_label">EFFECT PREVIEW</span>
+      </div>
+      <div class="drop-info">
+        <p data-i18n="drop_desc">The exact prompt + settings behind today's video. Copy, paste, generate — the effect is the product.</p>
+        <h3 data-i18n="drop_includes">Inside the pack</h3>
+        <ul class="check-list">
+          <li data-i18n="drop_i1">Full prompt in English &amp; Chinese</li>
+          <li data-i18n="drop_i2">Step-by-step settings for Midjourney / DALL·E / Stable Diffusion</li>
+          <li data-i18n="drop_i3">3 bonus variations to remix</li>
+        </ul>
+        <div class="drop-buy">
+          <div class="drop-price">
+            <span class="price" data-price="single"></span>
+            <span class="per" data-i18n="single_per">one-time</span>
+          </div>
+          <!-- TODO: paste your Stripe Payment Link for the SINGLE PACK below (replaces the URL).
+               Create it at: Stripe Dashboard → Payment Links → Create payment link -->
+          <a class="btn btn-primary" href="https://buy.stripe.com/REPLACE_ME_SINGLE" target="_blank" rel="noopener" data-i18n="drop_buy">Get the full pack</a>
+          <p class="fine" data-i18n="drop_price_note">One-time payment · Yours forever</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHIVE GRID -->
+  <section class="section archive">
+    <div class="section-head">
+      <h2 data-i18n="archive_title">Recent drops</h2>
+      <p data-i18n="archive_sub">Missed a day? Every past pack is still available.</p>
+    </div>
+    <div class="card-grid">
+      <article class="pack-card">
+        <div class="preview preview-b"><span class="preview-tag" data-i18n="preview_label">EFFECT PREVIEW</span></div>
+        <div class="pack-body">
+          <h3 data-i18n="card1_title">Neon Eye Portrait</h3>
+          <p data-i18n="card1_desc">Glowing neon-eye effect for profile pictures.</p>
+          <div class="pack-foot">
+            <span class="price" data-price="single"></span>
+            <!-- TODO: paste your Stripe Payment Link for the SINGLE PACK below -->
+            <a class="btn btn-small" href="https://buy.stripe.com/REPLACE_ME_SINGLE" target="_blank" rel="noopener" data-i18n="card_buy">Buy</a>
+          </div>
+        </div>
+      </article>
+      <article class="pack-card">
+        <div class="preview preview-c"><span class="preview-tag" data-i18n="preview_label">EFFECT PREVIEW</span></div>
+        <div class="pack-body">
+          <h3 data-i18n="card2_title">Retro Anime Poster</h3>
+          <p data-i18n="card2_desc">90s anime movie-poster style in a single prompt.</p>
+          <div class="pack-foot">
+            <span class="price" data-price="single"></span>
+            <!-- TODO: paste your Stripe Payment Link for the SINGLE PACK below -->
+            <a class="btn btn-small" href="https://buy.stripe.com/REPLACE_ME_SINGLE" target="_blank" rel="noopener" data-i18n="card_buy">Buy</a>
+          </div>
+        </div>
+      </article>
+      <article class="pack-card">
+        <div class="preview preview-d"><span class="preview-tag" data-i18n="preview_label">EFFECT PREVIEW</span></div>
+        <div class="pack-body">
+          <h3 data-i18n="card3_title">Floating Island Scene</h3>
+          <p data-i18n="card3_desc">Dreamy floating-island landscapes.</p>
+          <div class="pack-foot">
+            <span class="price" data-price="single"></span>
+            <!-- TODO: paste your Stripe Payment Link for the SINGLE PACK below -->
+            <a class="btn btn-small" href="https://buy.stripe.com/REPLACE_ME_SINGLE" target="_blank" rel="noopener" data-i18n="card_buy">Buy</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing">
+    <div class="section-head">
+      <h2 data-i18n="pricing_title">Simple pricing</h2>
+      <p data-i18n="pricing_sub">Start free. Pay only for the effects you love.</p>
+    </div>
+    <div class="tier-grid">
+
+      <article class="tier">
+        <h3 data-i18n="free_name">Free</h3>
+        <p class="tier-desc" data-i18n="free_desc">Taste today's drop</p>
+        <div class="tier-price"><span class="price" data-price="free"></span></div>
+        <ul class="check-list">
+          <li data-i18n="free_f1">Lite version of the daily pack</li>
+          <li data-i18n="free_f2">Watermarked preview images</li>
+          <li data-i18n="free_f3">A new drop every day</li>
+        </ul>
+        <!-- FREE TIER: point this at your file host, email signup form, or
+             keep the mailto below as a placeholder. -->
+        <a class="btn btn-ghost btn-block" href="mailto:hello@example.com?subject=Free%20daily%20pack" data-i18n="free_cta">Download free</a>
+      </article>
+
+      <article class="tier">
+        <h3 data-i18n="single_name">Single Pack</h3>
+        <p class="tier-desc" data-i18n="single_desc">Today's full effect</p>
+        <div class="tier-price">
+          <span class="price" data-price="single"></span>
+          <span class="per" data-i18n="single_per">one-time</span>
+        </div>
+        <ul class="check-list">
+          <li data-i18n="single_f1">Complete prompt + settings</li>
+          <li data-i18n="single_f2">English &amp; Chinese versions</li>
+          <li data-i18n="single_f3">Bonus variations included</li>
+          <li data-i18n="single_f4">Yours forever, free updates</li>
+        </ul>
+        <!-- TODO: paste your Stripe Payment Link for the SINGLE PACK below (replaces the URL).
+             Create it at: Stripe Dashboard → Payment Links → Create payment link -->
+        <a class="btn btn-primary btn-block" href="https://buy.stripe.com/REPLACE_ME_SINGLE" target="_blank" rel="noopener" data-i18n="single_cta">Buy now</a>
+      </article>
+
+      <article class="tier tier-highlight">
+        <span class="badge" data-i18n="badge_popular">MOST POPULAR</span>
+        <h3 data-i18n="monthly_name">Monthly</h3>
+        <p class="tier-desc" data-i18n="monthly_desc">For daily creators</p>
+        <div class="tier-price">
+          <span class="price" data-price="monthly"></span>
+          <span class="per" data-i18n="monthly_per">/month</span>
+        </div>
+        <ul class="check-list">
+          <li data-i18n="monthly_f1">Unlimited downloads, every pack</li>
+          <li data-i18n="monthly_f2">Every future daily drop included</li>
+          <li data-i18n="monthly_f3">Early access to new effects</li>
+          <li data-i18n="monthly_f4">Cancel anytime</li>
+        </ul>
+        <!-- TODO: paste your Stripe Payment Link for the MONTHLY PLAN below (replaces the URL).
+             Create it at: Stripe Dashboard → Payment Links → Create payment link (recurring) -->
+        <a class="btn btn-primary btn-block" href="https://buy.stripe.com/REPLACE_ME_MONTHLY" target="_blank" rel="noopener" data-i18n="monthly_cta">Go unlimited</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="section-head">
+      <h2 data-i18n="faq_title">FAQ</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary data-i18n="faq_q1">What exactly do I get?</summary>
+        <p data-i18n="faq_a1">A ready-to-paste prompt pack: the full prompt text, recommended settings for popular AI image &amp; video tools, and bonus variations. No fluff.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq_q2">Which AI tools does it work with?</summary>
+        <p data-i18n="faq_a2">Every pack is tested on major tools — Midjourney, DALL·E, Stable Diffusion and popular video generators. Per-tool settings are included.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq_q3">How do I receive my pack?</summary>
+        <p data-i18n="faq_a3">Instantly: a download link hits your inbox right after payment. Monthly members unlock a members page with every pack.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq_q4">Can I get a refund?</summary>
+        <p data-i18n="faq_a4">Digital goods can't be refunded once downloaded. But if a pack is broken or not as described, contact us and we'll make it right.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq_q5">How do I cancel monthly?</summary>
+        <p data-i18n="faq_a5">One click in your Stripe customer portal — no emails, no questions. You keep access until the end of the billing period.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <!-- BRAND: replace PROMPTDROP with your brand name -->
+  <span class="brand">PROMPTDROP</span>
+  <p data-i18n="footer_tagline">Daily AI prompt packs. One effect at a time.</p>
+  <p class="fine">© 2026 PROMPTDROP · <span data-i18n="footer_rights">All rights reserved.</span></p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
