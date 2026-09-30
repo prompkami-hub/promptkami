@@ -1,5 +1,5 @@
 /* ============================================================
-   PROMPTDROP — site config & logic
+   promptkami （提示词之神） — site config & logic
    ------------------------------------------------------------
    ★ EDIT PRICES HERE — this is the ONLY place prices live.
    - currency: ISO code for display ('USD', 'EUR', 'JPY' ...)
@@ -43,6 +43,19 @@ function renderPrices() {
 
 /* ---------------- language handling ---------------- */
 
+/* Set (or create) a meta tag's content. Used to keep SEO tags in sync
+   with the active language. */
+function setMeta(attr, key, value) {
+  if (!value) return;
+  let tag = document.querySelector(`meta[${attr}="${key}"]`);
+  if (!tag) {
+    tag = document.createElement('meta');
+    tag.setAttribute(attr, key);
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute('content', value);
+}
+
 const LANG_ATTR = { en: 'en', zh: 'zh-CN', ja: 'ja', es: 'es-MX' };
 
 function detectLang() {
@@ -68,8 +81,18 @@ function applyLang(lang) {
     const key = el.getAttribute('data-i18n-html');
     if (key in dict) el.innerHTML = dict[key];
   });
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const key = el.getAttribute('data-i18n-aria');
+    if (key in dict) el.setAttribute('aria-label', dict[key]);
+  });
   document.documentElement.lang = LANG_ATTR[lang] || 'en';
   document.title = dict.meta_title || document.title;
+  /* Keep SEO meta in sync with the active language. */
+  setMeta('name', 'description', dict.meta_description);
+  setMeta('property', 'og:title', dict.meta_title);
+  setMeta('property', 'og:description', dict.meta_description);
+  setMeta('name', 'twitter:title', dict.meta_title);
+  setMeta('name', 'twitter:description', dict.meta_description);
   const switcher = document.getElementById('langSwitcher');
   if (switcher) switcher.value = lang;
   try { localStorage.setItem('pd_lang', lang); } catch (e) { /* ignore */ }
