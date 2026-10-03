@@ -47,8 +47,8 @@ en: {
   free_in3: "Settings for MJ / DALL·E / more",
 
   drop_label: "Today's drop",
-  drop_title: "Cinnamoroll Motion Reel — 15s Code Animation",
-  drop_effect: "Turn Claude into your motion designer: a 15-second Cinnamoroll reel, 10 shots rendered live in code — kinetic type, time echo, shape morphs.",
+  drop_title: "Red Strings Puppet — 15s One-Take Chinese Horror Short",
+  drop_effect: "One prompt, 15 seconds, zero cuts: a feng shui compass explodes into red strings that weave a Miao puppet girl — Chinese horror at its most beautiful.",
   drop_desc: "The exact prompt + settings behind today's video. Copy, paste, generate — the effect is the product.",
   drop_includes: "Inside the pack",
   drop_i1: "Full 10-shot prompt manual (EN & 中文)",
@@ -156,8 +156,8 @@ zh: {
   free_in3: "MJ / 即梦 / 通义参数设置",
 
   drop_label: "今日掉落",
-  drop_title: "玉桂狗动效简历",
-  drop_effect: "把 Claude 变成你的动态设计师：15 秒玉桂狗动效简历，10 个镜头全用代码实时渲染——动效字体、时间残影、形变转场。",
+  drop_title: "红线牵傀儡 — 15秒一镜到底中式惊悚短片",
+  drop_effect: "一句话提示词，15 秒一镜到底：风水罗盘炸成漫天红线，红线织出苗疆傀儡少女——把中式恐怖美学拉满。",
   drop_desc: "今日视频背后的完整提示词 + 参数。复制、粘贴、生成——效果本身就是商品。",
   drop_includes: "包含内容",
   drop_i1: "完整 10 镜提示词手册（中英双语）",
@@ -265,8 +265,8 @@ ja: {
   free_in3: "各画像生成ツール用設定",
 
   drop_label: "今日のドロップ",
-  drop_title: "シナモロール・モーションリール",
-  drop_effect: "Claudeをモーションデザイナーに：15秒のシナモロールリール、全10ショットをコードでリアルタイムレンダリング。",
+  drop_title: "赤い糸の傀儡 — 15秒ワンカット中華ホラー短編",
+  drop_effect: "ワンプロンプトで15秒ノーカット：風水羅盤が爆発して赤い糸となり、ミャオ族の傀儡少女を織りなす——中華ホラー美学の極み。",
   drop_desc: "今日の動画の裏側にあるプロンプトと設定を完全収録。コピー、貼り付け、生成——効果そのものが商品です。",
   drop_includes: "パック内容",
   drop_i1: "全10ショットの完全プロンプト集（英語・中国語）",
@@ -374,8 +374,8 @@ es: {
   free_in3: "Ajustes para MJ / DALL·E / más",
 
   drop_label: "Drop de hoy",
-  drop_title: "Reel de movimiento de Cinnamoroll",
-  drop_effect: "Convierte Claude en tu diseñador de movimiento: reel de 15 segundos de Cinnamoroll, 10 tomas renderizadas en vivo con código.",
+  drop_title: "Marioneta de hilos rojos — corto de terror chino de 15 s en una sola toma",
+  drop_effect: "Un prompt, 15 segundos, cero cortes: una brújula de feng shui explota en hilos rojos que tejen una marioneta miao — el terror chino en su máxima belleza.",
   drop_desc: "El prompt exacto y los ajustes detrás del video de hoy. Copia, pega y genera — el efecto es el producto.",
   drop_includes: "Qué incluye",
   drop_i1: "Manual completo de 10 tomas (EN y chino)",
