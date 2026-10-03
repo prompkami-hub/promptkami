@@ -310,6 +310,7 @@
       </div>
       <div class="modal-step" id="modalStepPrompt" hidden>
         <h3 data-i18n="modal_done_title">Your free prompt</h3>
+        <p class="free-note" data-i18n="modal_sent_note">The prompt will also be sent to your email later today.</p>
         <div class="prompt-box"><pre id="freePromptText">EN:
 Write HTML+Canvas code with Claude for a 15-second Cinnamoroll motion reel: lock three things first — fixed palette, a persistent top-layer HUD, one character PNG; then all 10 shots only swap the middle picture layer. Render in browser, screen-record, stitch in CapCut. Hard constraints: no external CDNs/fonts, no WebGL/three.js, no setTimeout timelines.
 
@@ -319,9 +320,14 @@ Write HTML+Canvas code with Claude for a 15-second Cinnamoroll motion reel: lock
         <p class="free-note" data-i18n="modal_done_note">Loved it? The full pack ($0.99) adds per-tool settings + 3 bonus variations.</p>
         <a class="btn btn-ghost btn-block modal-upsell" id="modalUpsell" href="#drop" data-i18n="modal_upsell">Get the full pack — $0.99</a>
       </div>
+      <div class="modal-step" id="modalStepDup" hidden>
+        <h3 data-i18n="modal_dup_title">Already claimed today</h3>
+        <p data-i18n="modal_dup_note">This email already claimed today's drop. The prompt will be sent to your email later today — please check your inbox!</p>
+        <button class="btn btn-primary" id="dupCloseBtn" data-i18n="modal_dup_ok">Got it</button>
+      </div>
     </div>
   </div>
-  <script src="i18n.js?v=20261001a"></script>
-<script src="app.js?v=20261001a"></script>
+  <script src="i18n.js?v=20261002b"></script>
+<script src="app.js?v=20261002b"></script>
 </body>
 </html>
