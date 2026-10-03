@@ -118,12 +118,15 @@ function initFreeModal() {
   const closeBtn = document.getElementById('freeModalClose');
   const stepEmail = document.getElementById('modalStepEmail');
   const stepPrompt = document.getElementById('modalStepPrompt');
+  const stepDup = document.getElementById('modalStepDup');
   const copyBtn = document.getElementById('copyPromptBtn');
+  const dupCloseBtn = document.getElementById('dupCloseBtn');
   if (!modal || !openBtn) return;
 
   function openModal() {
     stepEmail.hidden = false;
     stepPrompt.hidden = true;
+    if (stepDup) stepDup.hidden = true;
     copyBtn.textContent = currentDict().modal_copy || 'Copy prompt';
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
@@ -143,10 +146,26 @@ function initFreeModal() {
 
   document.getElementById('freeModalForm').addEventListener('submit', async e => {
     e.preventDefault();
-    const email = document.getElementById('freeModalEmail').value.trim();
-    /* Fire-and-forget lead capture: every signup lands in the owner's
-       Google Sheet (promptkami-leads). Never block the user on it —
-       the prompt unlocks instantly either way. */
+    const emailInput = document.getElementById('freeModalEmail');
+    const submitBtn = document.querySelector('#freeModalForm button[type="submit"]');
+    const email = emailInput.value.trim().toLowerCase();
+    if (!email) return;
+
+    /* Same-day dedupe: one claim per email per day (per browser).
+       Stops double-click and resubmit duplicates from hitting the sheet. */
+    const today = new Date().toISOString().slice(0, 10);
+    let claimed = null;
+    try { claimed = JSON.parse(localStorage.getItem('pk_claimed') || 'null'); } catch (_) { /* ignore */ }
+    if (!claimed || claimed.date !== today) claimed = { date: today, emails: [] };
+    if ((claimed.emails || []).indexOf(email) !== -1) {
+      stepEmail.hidden = true;
+      stepPrompt.hidden = true;
+      if (stepDup) stepDup.hidden = false;
+      return;
+    }
+
+    /* Block double-submit while the request is in flight. */
+    if (submitBtn) submitBtn.disabled = true;
     try {
       const dropEl = document.querySelector('[data-i18n="drop_title"]');
       await fetch('https://script.google.com/macros/s/AKfycbzmGctc6MJSE8eARyc3aMQEmtqbqiITrBbqG0dofgm86tJqCkaiKCJzXEVIiBahq1xuaQ/exec', {
@@ -160,8 +179,19 @@ function initFreeModal() {
         })
       });
     } catch (err) { /* lead endpoint down — prompt still unlocks */ }
+    finally { if (submitBtn) submitBtn.disabled = false; }
+    try {
+      claimed.emails.push(email);
+      localStorage.setItem('pk_claimed', JSON.stringify(claimed));
+    } catch (_) { /* ignore */ }
     stepEmail.hidden = true;
+    if (stepDup) stepDup.hidden = true;
     stepPrompt.hidden = false;
+  });
+
+  if (dupCloseBtn) dupCloseBtn.addEventListener('click', () => {
+    modal.hidden = true;
+    document.body.style.overflow = '';
   });
 
   copyBtn.addEventListener('click', async () => {
