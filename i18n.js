@@ -47,8 +47,8 @@ en: {
   free_in3: "Settings for MJ / DALL·E / more",
 
   drop_label: "Today's drop",
-  drop_title: "Red Strings Puppet — 15s One-Take Chinese Horror Short",
-  drop_effect: "One prompt, 15 seconds, zero cuts: a feng shui compass explodes into red strings that weave a Miao puppet girl — Chinese horror at its most beautiful.",
+  drop_title: "Capybara Mimi Hypnotic Dance — 20s One-Take",
+  drop_effect: "A deadpan capybara dances a hypnotic routine — recreate the viral dance in one sentence. Two-step method: lock the character, then dance.",
   drop_desc: "The exact prompt + settings behind today's video. Copy, paste, generate — the effect is the product.",
   drop_includes: "Inside the pack",
   drop_i1: "Full 10-shot prompt manual (EN & 中文)",
@@ -156,8 +156,8 @@ zh: {
   free_in3: "MJ / 即梦 / 通义参数设置",
 
   drop_label: "今日掉落",
-  drop_title: "红线牵傀儡 — 15秒一镜到底中式惊悚短片",
-  drop_effect: "一句话提示词，15 秒一镜到底：风水罗盘炸成漫天红线，红线织出苗疆傀儡少女——把中式恐怖美学拉满。",
+  drop_title: "水豚米米魔性舞蹈 — 20秒一镜到底",
+  drop_effect: "面无表情的水豚跳起洗脑舞蹈，反差萌一句话复刻。两步法：先定角色，再跳舞。",
   drop_desc: "今日视频背后的完整提示词 + 参数。复制、粘贴、生成——效果本身就是商品。",
   drop_includes: "包含内容",
   drop_i1: "完整 10 镜提示词手册（中英双语）",
@@ -265,8 +265,8 @@ ja: {
   free_in3: "各画像生成ツール用設定",
 
   drop_label: "今日のドロップ",
-  drop_title: "赤い糸の傀儡 — 15秒ワンカット中華ホラー短編",
-  drop_effect: "ワンプロンプトで15秒ノーカット：風水羅盤が爆発して赤い糸となり、ミャオ族の傀儡少女を織りなす——中華ホラー美学の極み。",
+  drop_title: "カピバラ・ミミのダンス — 20秒ワンカット",
+  drop_effect: "無表情カピバラの洗脳ダンスを一文で再現。二段階法：キャラ固定→ダンス。",
   drop_desc: "今日の動画の裏側にあるプロンプトと設定を完全収録。コピー、貼り付け、生成——効果そのものが商品です。",
   drop_includes: "パック内容",
   drop_i1: "全10ショットの完全プロンプト集（英語・中国語）",
@@ -374,8 +374,8 @@ es: {
   free_in3: "Ajustes para MJ / DALL·E / más",
 
   drop_label: "Drop de hoy",
-  drop_title: "Marioneta de hilos rojos — corto de terror chino de 15 s en una sola toma",
-  drop_effect: "Un prompt, 15 segundos, cero cortes: una brújula de feng shui explota en hilos rojos que tejen una marioneta miao — el terror chino en su máxima belleza.",
+  drop_title: "Baile hipnótico de Mimi la capibara — 20s en una toma",
+  drop_effect: "Una capibara inexpresiva baila sin parar — recréalo en una frase. Método en dos pasos: fija el personaje, luego baila.",
   drop_desc: "El prompt exacto y los ajustes detrás del video de hoy. Copia, pega y genera — el efecto es el producto.",
   drop_includes: "Qué incluye",
   drop_i1: "Manual completo de 10 tomas (EN y chino)",
