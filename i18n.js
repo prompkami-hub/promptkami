@@ -47,8 +47,8 @@ en: {
   free_in3: "Settings for MJ / DALL·E / more",
 
   drop_label: "Today's drop",
-  drop_title: "AI Heaven Palace — One Prompt, 27 Shots, All AI",
-  drop_effect: "27 shots, all AI-generated. Chinese palace in the clouds. Free prompt at promptkami.com",
+  drop_title: "Batman Through 20,000 Years of Art History 🦇",
+  drop_effect: "20 shots, all AI-generated. From cave paintings to pop art. Free prompt at promptkami.com",
   drop_desc: "The exact prompt + settings behind today's video. Copy, paste, generate — the effect is the product.",
   drop_includes: "Inside the pack",
   drop_i1: "Full 10-shot prompt manual (EN & 中文)",
@@ -158,8 +158,8 @@ zh: {
   free_in3: "MJ / 即梦 / 通义参数设置",
 
   drop_label: "今日掉落",
-  drop_title: "把神话里的天庭做出来了！27 镜全 AI 生成✨",
-  drop_effect: "27 镜全 AI 生成，云端上的中式宫殿。免费提示词领取",
+  drop_title: "蝙蝠侠穿越 20000 年艺术史！20 种风格一次看爽🦇",
+  drop_effect: "20 镜全 AI 生成，从洞穴壁画到波普艺术。免费提示词领取",
   drop_desc: "今日视频背后的完整提示词 + 参数。复制、粘贴、生成——效果本身就是商品。",
   drop_includes: "包含内容",
   drop_i1: "完整 10 镜提示词手册（中英双语）",
@@ -269,8 +269,8 @@ ja: {
   free_in3: "各画像生成ツール用設定",
 
   drop_label: "今日のドロップ",
-  drop_title: "AIが天庭を描いた — 27ショット全編AI生成✨",
-  drop_effect: "27ショット、全編AI生成。雲の上の中国宮殿。",
+  drop_title: "バットマンが2万年の美術史を駆け抜ける🦇",
+  drop_effect: "20ショット、全編AI生成。洞窟壁画からポップアートまで。",
   drop_desc: "今日の動画の裏側にあるプロンプトと設定を完全収録。コピー、貼り付け、生成——効果そのものが商品です。",
   drop_includes: "パック内容",
   drop_i1: "全10ショットの完全プロンプト集（英語・中国語）",
@@ -380,8 +380,8 @@ es: {
   free_in3: "Ajustes para MJ / DALL·E / más",
 
   drop_label: "Drop de hoy",
-  drop_title: "¡La IA construyó el CIELO! 27 tomas generadas por IA✨",
-  drop_effect: "27 tomas, todas generadas por IA. Palacio chino entre las nubes.",
+  drop_title: "¡Batman a través de 20,000 años de historia del arte! 🦇",
+  drop_effect: "20 tomas, todas generadas por IA. Del arte rupestre al pop art.",
   drop_desc: "El prompt exacto y los ajustes detrás del video de hoy. Copia, pega y genera — el efecto es el producto.",
   drop_includes: "Qué incluye",
   drop_i1: "Manual completo de 10 tomas (EN y chino)",
