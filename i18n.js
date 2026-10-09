@@ -47,8 +47,8 @@ en: {
   free_in3: "Settings for MJ / DALL·E / more",
 
   drop_label: "Today's drop",
-  drop_title: "Batman Through 20,000 Years of Art History 🦇",
-  drop_effect: "20 shots, all AI-generated. From cave paintings to pop art. Free prompt at promptkami.com",
+  drop_title: "First-Person Time Travel to Ancient China! 20 Shots in 46 Seconds 🌾",
+  drop_effect: "First-person view farming in ancient China. 20 shots, 46 seconds of immersive pastoral beauty.",
   drop_desc: "The exact prompt + settings behind today's video. Copy, paste, generate — the effect is the product.",
   drop_includes: "Inside the pack",
   drop_i1: "Full 10-shot prompt manual (EN & 中文)",
@@ -158,8 +158,8 @@ zh: {
   free_in3: "MJ / 即梦 / 通义参数设置",
 
   drop_label: "今日掉落",
-  drop_title: "蝙蝠侠穿越 20000 年艺术史！20 种风格一次看爽🦇",
-  drop_effect: "20 镜全 AI 生成，从洞穴壁画到波普艺术。免费提示词领取",
+  drop_title: "第一人称穿越回古代种田！46秒20镜美到窒息🌾",
+  drop_effect: "第一人称视角穿越古代种田，20 镜 46 秒，沉浸式田园牧歌。",
   drop_desc: "今日视频背后的完整提示词 + 参数。复制、粘贴、生成——效果本身就是商品。",
   drop_includes: "包含内容",
   drop_i1: "完整 10 镜提示词手册（中英双语）",
@@ -269,8 +269,8 @@ ja: {
   free_in3: "各画像生成ツール用設定",
 
   drop_label: "今日のドロップ",
-  drop_title: "バットマンが2万年の美術史を駆け抜ける🦇",
-  drop_effect: "20ショット、全編AI生成。洞窟壁画からポップアートまで。",
+  drop_title: "一人称で古代中国へタイムスリップ！46秒20カットの田園牧歌🌾",
+  drop_effect: "一人称視点で古代中国の田園生活を体験。20カット46秒の没入感。",
   drop_desc: "今日の動画の裏側にあるプロンプトと設定を完全収録。コピー、貼り付け、生成——効果そのものが商品です。",
   drop_includes: "パック内容",
   drop_i1: "全10ショットの完全プロンプト集（英語・中国語）",
@@ -380,8 +380,8 @@ es: {
   free_in3: "Ajustes para MJ / DALL·E / más",
 
   drop_label: "Drop de hoy",
-  drop_title: "¡Batman a través de 20,000 años de historia del arte! 🦇",
-  drop_effect: "20 tomas, todas generadas por IA. Del arte rupestre al pop art.",
+  drop_title: "¡Viaje en primera persona a la China antigua! 20 tomas en 46 segundos 🌾",
+  drop_effect: "Vida rural en la China antigua en primera persona. 20 tomas, 46 segundos.",
   drop_desc: "El prompt exacto y los ajustes detrás del video de hoy. Copia, pega y genera — el efecto es el producto.",
   drop_includes: "Qué incluye",
   drop_i1: "Manual completo de 10 tomas (EN y chino)",
