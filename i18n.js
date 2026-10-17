@@ -47,8 +47,8 @@ en: {
   free_in3: "Settings for MJ / DALL·E / more",
 
   drop_label: "Today's drop",
-  drop_title: "Snow City Swordswoman: 15 Shots, Zero Cuts — AI Combat at Its Peak ❄️",
-  drop_effect: "A red-clad swordswoman battles through a snowy ancient city. 15 shots, 19 seconds, zero hard cuts — pure AI-generated wuxia action.",
+  drop_title: "One Woman. One Sword. 10,000 Enemies 🍑 | AI Wuxia Action",
+  drop_effect: "Surrounded in a peach blossom forest, she breaks the formation alone. 30 seconds of pure AI wuxia action.",
   drop_desc: "The exact prompt + settings behind today's video. Copy, paste, generate — the effect is the product.",
   drop_includes: "Inside the pack",
   drop_i1: "Full 15-shot prompt manual (EN & 中文)",
@@ -158,8 +158,8 @@ zh: {
   free_in3: "MJ / 即梦 / 通义参数设置",
 
   drop_label: "今日掉落",
-  drop_title: "雪城红衣少女15镜一镜到底！AI打戏天花板❄️",
-  drop_effect: "红衣少女雪城激战，15镜19秒零硬切，AI武侠打戏拉满。",
+  drop_title: "桃花酒一人破阵！一剑破万军🍑",
+  drop_effect: "桃花林中被重重包围，她一人一剑破阵而出。30秒纯AI武侠动作。",
   drop_desc: "今日视频背后的完整提示词 + 参数。复制、粘贴、生成——效果本身就是商品。",
   drop_includes: "包含内容",
   drop_i1: "完整 15 镜提示词手册（中英双语）",
@@ -269,8 +269,8 @@ ja: {
   free_in3: "各画像生成ツール用設定",
 
   drop_label: "今日のドロップ",
-  drop_title: "雪の城の赤い少女、15カット一気通貫！AIアクションの頂点❄️",
-  drop_effect: "雪の古城で赤い衣の少女が戦う。15カット19秒、ハードカットゼロのAI武侠アクション。",
+  drop_title: "桃酒一人陣破り！一剣で万軍を破る🍑",
+  drop_effect: "桃の林に包囲され、一人一剣で陣を破る。30秒の純AI武侠アクション。",
   drop_desc: "今日の動画の裏側にあるプロンプトと設定を完全収録。コピー、貼り付け、生成——効果そのものが商品です。",
   drop_includes: "パック内容",
   drop_i1: "全10ショットの完全プロンプト集（英語・中国語）",
@@ -380,8 +380,8 @@ es: {
   free_in3: "Ajustes para MJ / DALL·E / más",
 
   drop_label: "Drop de hoy",
-  drop_title: "Guerrera de la ciudad nevada: 15 tomas, cero cortes ❄️",
-  drop_effect: "Una guerrera de rojo lucha en una ciudad nevada. 15 tomas, 19 segundos, cero cortes — acción wuxia generada por IA.",
+  drop_title: "Una mujer. Una espada. 10,000 enemigos 🍑 | Acción wuxia IA",
+  drop_effect: "Rodeada en un bosque de duraznos en flor, rompe la formación sola. 30 segundos de pura acción wuxia generada por IA.",
   drop_desc: "El prompt exacto y los ajustes detrás del video de hoy. Copia, pega y genera — el efecto es el producto.",
   drop_includes: "Qué incluye",
   drop_i1: "Manual completo de 10 tomas (EN y chino)",
