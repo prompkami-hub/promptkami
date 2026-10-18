@@ -68,8 +68,6 @@ en: {
   card2_desc: "Same prompt, two models — rainy-night game scene showdown.",
   card3_title: "Red Strings Puppet — 15s One-Take Chinese Horror Short",
   card3_desc: "A feng shui compass explodes into red strings weaving a Miao puppet girl.",
-  card3_title: "Floating Island Scene",
-  card3_desc: "Dreamy floating-island landscapes.",
   card_buy: "Buy",
 
   pricing_title: "Simple pricing",
@@ -179,8 +177,6 @@ zh: {
   card2_desc: "同一提示词、两个模型，雨夜游戏场景对决。",
   card3_title: "红线牵傀儡 — 15秒一镜到底中式惊悚短片",
   card3_desc: "风水罗盘炸成漫天红线，织出苗疆傀儡少女。",
-  card3_title: "浮空岛场景",
-  card3_desc: "梦幻浮空岛风景。",
   card_buy: "购买",
 
   pricing_title: "价格简单",
@@ -290,8 +286,6 @@ ja: {
   card2_desc: "同じプロンプトで2モデル対決、雨の夜のゲームシーン。",
   card3_title: "赤い糸の傀儡 — 15秒ワンカット中華ホラー短編",
   card3_desc: "風水羅盤が赤い糸に爆発し、ミャオ族の傀儡少女を織りなす。",
-  card3_title: "浮遊島シーン",
-  card3_desc: "夢のような浮遊島の風景。",
   card_buy: "購入",
 
   pricing_title: "シンプルな料金",
@@ -401,8 +395,6 @@ es: {
   card2_desc: "Mismo prompt, dos modelos: duelo de escenas nocturnas.",
   card3_title: "Marioneta de hilos rojos — corto de terror chino de 15 s en una sola toma",
   card3_desc: "Una brújula de feng shui explota en hilos rojos que tejen una marioneta miao.",
-  card3_title: "Isla flotante",
-  card3_desc: "Paisajes oníricos de islas flotantes.",
   card_buy: "Comprar",
 
   pricing_title: "Precios simples",
