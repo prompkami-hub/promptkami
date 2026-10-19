@@ -528,10 +528,14 @@
       };
       function t(key) {
         try {
-          var l = localStorage.getItem("pd_lang");
-          if (l && window.I18N && I18N[l] && I18N[l][key]) return I18N[l][key];
+          var G = (typeof I18N !== "undefined") ? I18N : (window.I18N || null);
+          if (!G) return "";
+          var l = null;
+          try { l = localStorage.getItem("pd_lang"); } catch (e) {}
+          if (l && G[l] && G[l][key]) return G[l][key];
+          if (G.en && G.en[key]) return G.en[key];
         } catch (e) {}
-        return (window.I18N && I18N.en && I18N.en[key]) || "";
+        return "";
       }
       var form = document.getElementById("dlForm");
       var input = document.getElementById("dlCode");
