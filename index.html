@@ -408,6 +408,7 @@
     </div>
     <script>
     (function () {
+      function init() {
       /* code -> pack map. Keys are base64(code); light obfuscation only. */
       var VAULT = {
         "VElBTlFVRTIwMjY=": {
@@ -463,6 +464,12 @@
           msg.hidden = false;
         }
       });
+      } /* end init */
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+      } else {
+        init();
+      }
     })();
     </script>
   </section>
