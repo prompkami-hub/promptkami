@@ -95,8 +95,8 @@ en: {
   free_in3: "Settings for MJ / DALL·E / more",
 
   drop_label: "Today's drop",
-  drop_title: "One Woman. One Sword. 10,000 Enemies 🍑 | AI Wuxia Action",
-  drop_effect: "Surrounded in a peach blossom forest, she breaks the formation alone. 30 seconds of pure AI wuxia action.",
+  drop_title: "Red Silk Assassin: 15 Shots, Zero Cuts ❄️ | AI Wuxia Combat",
+  drop_effect: "A red-clad puppet master takes on a whole street of armored warriors with silk threads alone. 15 shots, zero hard cuts — one seamless AI wuxia fight in a snow-buried city.",
   drop_desc: "The exact prompt + settings behind today's video. Copy, paste, generate — the effect is the product.",
   drop_includes: "Inside the pack",
   drop_i1: "Full 15-shot prompt manual (EN & 中文)",
@@ -252,8 +252,8 @@ zh: {
   free_in3: "MJ / 即梦 / 通义参数设置",
 
   drop_label: "今日掉落",
-  drop_title: "桃花酒一人破阵！一剑破万军🍑",
-  drop_effect: "桃花林中被重重包围，她一人一剑破阵而出。30秒纯AI武侠动作。",
+  drop_title: "雪城赤丝！红衣少女十指操丝灭全军❄️",
+  drop_effect: "雪城长街，红衣少女不用剑，十指操控赤红丝线一人迎战整排甲士。15镜零硬切，一镜到底的AI武侠战斗。",
   drop_desc: "今日视频背后的完整提示词 + 参数。复制、粘贴、生成——效果本身就是商品。",
   drop_includes: "包含内容",
   drop_i1: "完整 15 镜提示词手册（中英双语）",
@@ -409,8 +409,8 @@ ja: {
   free_in3: "各画像生成ツール用設定",
 
   drop_label: "今日のドロップ",
-  drop_title: "桃酒一人陣破り！一剣で万軍を破る🍑",
-  drop_effect: "桃の林に包囲され、一人一剣で陣を破る。30秒の純AI武侠アクション。",
+  drop_title: "雪の城の赤い糸使い❄️15カット・継ぎ目ゼロ",
+  drop_effect: "雪に埋もれた城の通りで、赤衣の少女が剣ではなく十指の赤い糸で甲冑の戦士たちに一人で挑む。15カット継ぎ目ゼロ、一続きのAI武侠バトル。",
   drop_desc: "今日の動画の裏側にあるプロンプトと設定を完全収録。コピー、貼り付け、生成——効果そのものが商品です。",
   drop_includes: "パック内容",
   drop_i1: "全10ショットの完全プロンプト集（英語・中国語）",
@@ -566,8 +566,8 @@ es: {
   free_in3: "Ajustes para MJ / DALL·E / más",
 
   drop_label: "Drop de hoy",
-  drop_title: "Una mujer. Una espada. 10,000 enemigos 🍑 | Acción wuxia IA",
-  drop_effect: "Rodeada en un bosque de duraznos en flor, rompe la formación sola. 30 segundos de pura acción wuxia generada por IA.",
+  drop_title: "Asesina de seda roja: 15 tomas, cero cortes ❄️ | Combate wuxia IA",
+  drop_effect: "En una calle nevada, una joven de rojo lucha sin espada: controla hilos de seda rojos con los dedos contra una fila de guerreros acorazados. 15 tomas sin cortes duros, un solo combate wuxia continuo generado por IA.",
   drop_desc: "El prompt exacto y los ajustes detrás del video de hoy. Copia, pega y genera — el efecto es el producto.",
   drop_includes: "Qué incluye",
   drop_i1: "Manual completo de 10 tomas (EN y chino)",
