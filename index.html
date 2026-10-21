@@ -570,10 +570,11 @@
         a.click();
         a.remove();
       });
-      form.addEventListener("submit", function (ev) {
-        ev.preventDefault();
-        var code = (input.value || "").trim().toUpperCase();
-        var pack = code ? VAULT[btoa(code)] : null;
+      function unlock(raw) {
+        var code = (raw || "").trim().toUpperCase();
+        var key = null;
+        try { key = code ? btoa(code) : null; } catch (e) { key = null; }
+        var pack = key ? VAULT[key] : null;
         if (pack) {
           msg.hidden = true;
           pendingFile = pack.file;
@@ -582,11 +583,32 @@
           packTitle.textContent = t(pack.titleKey);
           packDesc.textContent = t(pack.descKey);
           modal.hidden = false;
-        } else {
-          msg.textContent = t("dl_err");
-          msg.hidden = false;
+          return true;
         }
+        msg.textContent = t("dl_err");
+        msg.hidden = false;
+        return false;
+      }
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        unlock(input.value);
       });
+      /* Deep link: ?code=XXXX#downloads pre-fills the code and unlocks automatically. */
+      (function () {
+        var linkCode = null;
+        try {
+          linkCode = new URLSearchParams(window.location.search).get("code");
+          if (!linkCode && window.location.hash.indexOf("?") !== -1) {
+            linkCode = new URLSearchParams(window.location.hash.slice(window.location.hash.indexOf("?") + 1)).get("code");
+          }
+        } catch (e) { linkCode = null; }
+        if (linkCode && linkCode.trim()) {
+          input.value = linkCode.trim();
+          var dlSection = document.getElementById("downloads");
+          if (dlSection && dlSection.scrollIntoView) dlSection.scrollIntoView();
+          unlock(linkCode);
+        }
+      })();
       } /* end init */
       if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", init);
