@@ -420,14 +420,19 @@
       .dl-pack-name { font-size: 1rem; }
       .dl-pack-btn { flex: none; padding: .5rem .9rem; font-size: .9rem; }
       .dl-tokens { margin-top: .9rem; font-size: .95rem; color: var(--muted); min-height: 1.5em; }
+      .vault-sub-title { font-size: 1.15rem; margin: 1.4rem 0 .2rem; }
+      .vault-sub-desc { color: var(--muted); margin-bottom: .4rem; }
+      .dl-divider { text-align: center; color: var(--muted); margin: 1.6rem 0 .2rem; }
       @media (max-width: 640px){ .dl-form { flex-direction: column; } }
     </style>
     <div class="section-head">
       <span class="kicker" data-i18n="dl_kicker">Downloads</span>
       <h2 data-i18n="dl_title">Your prompt vault</h2>
-      <p data-i18n="dl_desc">Enter the email you used at checkout to unlock your downloads.</p>
+      <p data-i18n="dl_desc">Members sign in with email, or use a download code.</p>
     </div>
     <div class="vault-box">
+      <h3 class="vault-sub-title" data-i18n="dl_member_title">Member downloads</h3>
+      <p class="vault-sub-desc" data-i18n="dl_member_desc">Enter the email you used at checkout.</p>
       <form class="dl-form" id="dlForm">
         <input type="email" id="dlEmail" data-i18n-ph="dl_email_ph" data-i18n-aria="dl_email_label" placeholder="Enter your payment email" autocomplete="email" spellcheck="false" aria-label="Payment email">
         <button class="btn btn-primary" type="submit" data-i18n="dl_btn">Unlock</button>
@@ -435,6 +440,14 @@
       <p class="dl-msg dl-err" id="dlMsg" role="status" hidden></p>
       <p class="dl-tokens" id="dlTokens"></p>
       <div class="dl-pack-list" id="dlPackList"></div>
+      <p class="dl-divider" data-i18n="dl_or">or</p>
+      <h3 class="vault-sub-title" data-i18n="dl_code_title">Download with a code</h3>
+      <p class="vault-sub-desc" data-i18n="dl_code_desc">Bought on another platform? Enter the code you received.</p>
+      <form class="dl-form" id="dlCodeForm">
+        <input type="text" id="dlCode" data-i18n-ph="dl_code_ph" data-i18n-aria="dl_code_label" placeholder="Enter your download code" autocomplete="off" spellcheck="false" aria-label="Download code">
+        <button class="btn btn-primary" type="submit" data-i18n="dl_btn">Unlock</button>
+      </form>
+      <p class="dl-msg dl-err" id="dlCodeMsg" role="status" hidden></p>
     </div>
     <script>
     (function () {
@@ -538,6 +551,169 @@
           renderTokens(); renderList();
         }).catch(function () { showMsg(t("dl_net_err"), true); });
       });
+      /* Code entrance (other-platform buyers): code -> pack map. Keys are base64(code); light obfuscation only. */
+      var VAULT = {
+        "VElBTlFVRTIwMjY=": {
+          file: "downloads/tianshang-gongque.md",
+          img: "images/card-heaven.webp?v=20261008a",
+          titleKey: "dl_pack1_title",
+          descKey: "dl_pack1_desc"
+        },
+        "S1VOR0ZVMjAyNg==": {
+          file: "downloads/kungfu-shanshenbu.md",
+          img: "images/card-neon-eye.webp",
+          titleKey: "dl_pack2_title",
+          descKey: "dl_pack2_desc"
+        },
+        "TUpEQU5DRTIwMjY=": {
+          file: "downloads/mj-ink-dance.md",
+          img: "images/card-mj.webp",
+          titleKey: "dl_pack3_title",
+          descKey: "dl_pack3_desc"
+        },
+        "U0NFTkUzRDIwMjY=": {
+          file: "downloads/3d-scene-compare.md",
+          img: "images/card-neon-eye.webp",
+          titleKey: "dl_pack4_title",
+          descKey: "dl_pack4_desc"
+        },
+        "Q0lOTkEyMDI2": {
+          file: "downloads/cinnamoroll-reel.md",
+          img: "images/card-neon-eye.webp",
+          titleKey: "dl_pack5_title",
+          descKey: "dl_pack5_desc"
+        },
+        "UFVQUEVUMjAyNg==": {
+          file: "downloads/xianxia-puppet.md",
+          img: "images/card-puppet.webp",
+          titleKey: "dl_pack6_title",
+          descKey: "dl_pack6_desc"
+        },
+        "TUlNSTIwMjY=": {
+          file: "downloads/mimi-dance.md",
+          img: "images/card-mimi.webp",
+          titleKey: "dl_pack7_title",
+          descKey: "dl_pack7_desc"
+        },
+        "Q0FOR0pJRTIwMjY=": {
+          file: "downloads/cangjie-skill-promo.md",
+          img: "images/card-cangjie.webp",
+          titleKey: "dl_pack8_title",
+          descKey: "dl_pack8_desc"
+        },
+        "QkFUTUFOMjAyNg==": {
+          file: "downloads/fable-batman-dizzy.md",
+          img: "images/card-batman.webp",
+          titleKey: "dl_pack9_title",
+          descKey: "dl_pack9_desc"
+        },
+        "V0hJVEVNT0RFTDIwMjY=": {
+          file: "downloads/3d-whitemodel-previz.md",
+          img: "images/card-3d.webp",
+          titleKey: "dl_pack11_title",
+          descKey: "dl_pack11_desc"
+        },
+        "Q1JPSVNTQU5UMjAyNg==": {
+          file: "downloads/duoer-croissant.md",
+          img: "images/card-croissant.webp",
+          titleKey: "dl_pack12_title",
+          descKey: "dl_pack12_desc"
+        },
+        "UkVVTklPTjIwMjY=": {
+          file: "downloads/street-reunion.md",
+          img: "images/card-neon-eye.webp",
+          titleKey: "dl_pack14_title",
+          descKey: "dl_pack14_desc"
+        },
+        "U05PV0ZJR0hUMjAyNg==": {
+          file: "downloads/snow-combat-practice.md",
+          img: "images/card-snowcombat.webp",
+          titleKey: "dl_pack15_title",
+          descKey: "dl_pack15_desc"
+        },
+        "REFSS0RVRUwyMDI2": {
+          file: "downloads/dark-city-duel.md",
+          img: "images/card-neon-eye.webp",
+          titleKey: "dl_pack16_title",
+          descKey: "dl_pack16_desc"
+        },
+        "RkFSTUlORzIwMjY=": {
+          file: "downloads/pastoral-farming.md",
+          img: "images/card-farming.webp",
+          titleKey: "dl_pack17_title",
+          descKey: "dl_pack17_desc"
+        },
+        "UEVBQ0hXSU5FMjAyNg==": {
+          file: "downloads/peach-wine-solo.md",
+          img: "images/card-peachwine.webp",
+          titleKey: "dl_pack18_title",
+          descKey: "dl_pack18_desc"
+        },
+        "UkVTRVRNVjIwMjY=": {
+          file: "downloads/reset-music-mv.md",
+          img: "images/card-neon-eye.webp",
+          titleKey: "dl_pack19_title",
+          descKey: "dl_pack19_desc"
+        }
+      };
+      var codeForm = document.getElementById("dlCodeForm");
+      var codeInput = document.getElementById("dlCode");
+      var codeMsg = document.getElementById("dlCodeMsg");
+      var modal = document.getElementById("dlModal");
+      var packImg = document.getElementById("dlPackImg");
+      var packTitle = document.getElementById("dlPackTitle");
+      var packDesc = document.getElementById("dlPackDesc");
+      var dlBtn = document.getElementById("dlDownloadBtn");
+      var pendingFile = null;
+      function closeModal() { modal.hidden = true; }
+      document.getElementById("dlModalClose").addEventListener("click", closeModal);
+      modal.addEventListener("click", function (e) { if (e.target === modal) closeModal(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden) closeModal(); });
+      dlBtn.addEventListener("click", function () {
+        if (!pendingFile) return;
+        var a = document.createElement("a");
+        a.href = pendingFile; a.download = pendingFile.split("/").pop();
+        document.body.appendChild(a); a.click(); a.remove();
+      });
+      function unlockCode(raw) {
+        var code = (raw || "").trim().toUpperCase();
+        var key = null;
+        try { key = code ? btoa(code) : null; } catch (e) { key = null; }
+        var pack = key ? VAULT[key] : null;
+        if (pack) {
+          codeMsg.hidden = true;
+          pendingFile = pack.file;
+          packImg.src = pack.img;
+          packImg.alt = t(pack.titleKey);
+          packTitle.textContent = t(pack.titleKey);
+          packDesc.textContent = t(pack.descKey);
+          modal.hidden = false;
+          return true;
+        }
+        codeMsg.textContent = t("dl_err");
+        codeMsg.hidden = false;
+        return false;
+      }
+      codeForm.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        unlockCode(codeInput.value);
+      });
+      /* Deep link: ?code=XXXX#downloads pre-fills the code and unlocks automatically. */
+      (function () {
+        var linkCode = null;
+        try {
+          linkCode = new URLSearchParams(window.location.search).get("code");
+          if (!linkCode && window.location.hash.indexOf("?") !== -1) {
+            linkCode = new URLSearchParams(window.location.hash.slice(window.location.hash.indexOf("?") + 1)).get("code");
+          }
+        } catch (e) { linkCode = null; }
+        if (linkCode && linkCode.trim()) {
+          codeInput.value = linkCode.trim();
+          var dlSection = document.getElementById("downloads");
+          if (dlSection && dlSection.scrollIntoView) dlSection.scrollIntoView();
+          unlockCode(linkCode);
+        }
+      })();
       /* Deep link: ?email=XXXX pre-fills the email box and unlocks automatically. */
       (function () {
         var em = null;
@@ -619,7 +795,7 @@ Una animación por código de 44 segundos: el mismo caballero oscuro en 20 estil
       <button class="btn btn-primary btn-block" id="dlDownloadBtn" data-i18n="dl_download_btn">Download file</button>
     </div>
   </div>
-  <script src="i18n.js?v=20261025a"></script>
+  <script src="i18n.js?v=20261025b"></script>
 <script src="app.js?v=20261002b"></script>
 </body>
 </html>
