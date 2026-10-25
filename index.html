@@ -414,128 +414,51 @@
       .dl-pack-preview { width: 100%; border-radius: 10px; margin: 1rem 0; border: 1px solid var(--border); display: block; }
       .dl-pack-title { font-size: 1.25rem; margin: .4rem 0 .6rem; }
       .dl-pack-desc { color: var(--muted); margin-bottom: 1.4rem; line-height: 1.6; }
+      .dl-pack-list { margin-top: 1.2rem; text-align: left; }
+      .dl-pack-row { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .6rem 0; border-top: 1px solid var(--border); }
+      .dl-pack-name { font-size: 1rem; }
+      .dl-pack-btn { flex: none; padding: .5rem .9rem; font-size: .9rem; }
+      .dl-tokens { margin-top: .9rem; font-size: .95rem; color: var(--muted); min-height: 1.5em; }
       @media (max-width: 640px){ .dl-form { flex-direction: column; } }
     </style>
     <div class="section-head">
       <span class="kicker" data-i18n="dl_kicker">Downloads</span>
       <h2 data-i18n="dl_title">Your prompt vault</h2>
-      <p data-i18n="dl_desc">Enter the download code you received to unlock your prompt pack.</p>
+      <p data-i18n="dl_desc">Enter the email you used at checkout to unlock your downloads.</p>
     </div>
     <div class="vault-box">
       <form class="dl-form" id="dlForm">
-        <input type="text" id="dlCode" data-i18n-ph="dl_code_ph" data-i18n-aria="dl_code_label" placeholder="Enter your download code" autocomplete="off" spellcheck="false" aria-label="Download code">
+        <input type="email" id="dlEmail" data-i18n-ph="dl_email_ph" data-i18n-aria="dl_email_label" placeholder="Enter your payment email" autocomplete="email" spellcheck="false" aria-label="Payment email">
         <button class="btn btn-primary" type="submit" data-i18n="dl_btn">Unlock</button>
       </form>
       <p class="dl-msg dl-err" id="dlMsg" role="status" hidden></p>
+      <p class="dl-tokens" id="dlTokens"></p>
+      <div class="dl-pack-list" id="dlPackList"></div>
     </div>
     <script>
     (function () {
       function init() {
-      /* code -> pack map. Keys are base64(code); light obfuscation only. */
-      var VAULT = {
-        "VElBTlFVRTIwMjY=": {
-          file: "downloads/tianshang-gongque.md",
-          img: "images/card-heaven.webp?v=20261008a",
-          titleKey: "dl_pack1_title",
-          descKey: "dl_pack1_desc"
-        },
-        "S1VOR0ZVMjAyNg==": {
-          file: "downloads/kungfu-shanshenbu.md",
-          img: "images/card-neon-eye.webp",
-          titleKey: "dl_pack2_title",
-          descKey: "dl_pack2_desc"
-        },
-        "TUpEQU5DRTIwMjY=": {
-          file: "downloads/mj-ink-dance.md",
-          img: "images/card-mj.webp",
-          titleKey: "dl_pack3_title",
-          descKey: "dl_pack3_desc"
-        },
-        "U0NFTkUzRDIwMjY=": {
-          file: "downloads/3d-scene-compare.md",
-          img: "images/card-neon-eye.webp",
-          titleKey: "dl_pack4_title",
-          descKey: "dl_pack4_desc"
-        },
-        "Q0lOTkEyMDI2": {
-          file: "downloads/cinnamoroll-reel.md",
-          img: "images/card-neon-eye.webp",
-          titleKey: "dl_pack5_title",
-          descKey: "dl_pack5_desc"
-        },
-        "UFVQUEVUMjAyNg==": {
-          file: "downloads/xianxia-puppet.md",
-          img: "images/card-puppet.webp",
-          titleKey: "dl_pack6_title",
-          descKey: "dl_pack6_desc"
-        },
-        "TUlNSTIwMjY=": {
-          file: "downloads/mimi-dance.md",
-          img: "images/card-mimi.webp",
-          titleKey: "dl_pack7_title",
-          descKey: "dl_pack7_desc"
-        },
-        "Q0FOR0pJRTIwMjY=": {
-          file: "downloads/cangjie-skill-promo.md",
-          img: "images/card-cangjie.webp",
-          titleKey: "dl_pack8_title",
-          descKey: "dl_pack8_desc"
-        },
-        "QkFUTUFOMjAyNg==": {
-          file: "downloads/fable-batman-dizzy.md",
-          img: "images/card-batman.webp",
-          titleKey: "dl_pack9_title",
-          descKey: "dl_pack9_desc"
-        },
-        "V0hJVEVNT0RFTDIwMjY=": {
-          file: "downloads/3d-whitemodel-previz.md",
-          img: "images/card-3d.webp",
-          titleKey: "dl_pack11_title",
-          descKey: "dl_pack11_desc"
-        },
-        "Q1JPSVNTQU5UMjAyNg==": {
-          file: "downloads/duoer-croissant.md",
-          img: "images/card-croissant.webp",
-          titleKey: "dl_pack12_title",
-          descKey: "dl_pack12_desc"
-        },
-        "UkVVTklPTjIwMjY=": {
-          file: "downloads/street-reunion.md",
-          img: "images/card-neon-eye.webp",
-          titleKey: "dl_pack14_title",
-          descKey: "dl_pack14_desc"
-        },
-        "U05PV0ZJR0hUMjAyNg==": {
-          file: "downloads/snow-combat-practice.md",
-          img: "images/card-snowcombat.webp",
-          titleKey: "dl_pack15_title",
-          descKey: "dl_pack15_desc"
-        },
-        "REFSS0RVRUwyMDI2": {
-          file: "downloads/dark-city-duel.md",
-          img: "images/card-neon-eye.webp",
-          titleKey: "dl_pack16_title",
-          descKey: "dl_pack16_desc"
-        },
-        "RkFSTUlORzIwMjY=": {
-          file: "downloads/pastoral-farming.md",
-          img: "images/card-farming.webp",
-          titleKey: "dl_pack17_title",
-          descKey: "dl_pack17_desc"
-        },
-        "UEVBQ0hXSU5FMjAyNg==": {
-          file: "downloads/peach-wine-solo.md",
-          img: "images/card-peachwine.webp",
-          titleKey: "dl_pack18_title",
-          descKey: "dl_pack18_desc"
-        },
-        "UkVTRVRNVjIwMjY=": {
-          file: "downloads/reset-music-mv.md",
-          img: "images/card-neon-eye.webp",
-          titleKey: "dl_pack19_title",
-          descKey: "dl_pack19_desc"
-        }
-      };
+      var ENDPOINT = "https://script.google.com/macros/s/AKfycbzq2lGUYTRCFHQy0vZzikAGP4d0tm3oZMjQCZ_J_lDmrYcSAzb5whrMMqsTGijvcani/exec";
+      /* Pack catalog (email + token gating; no codes). */
+      var PACKS = [
+        { file: "downloads/tianshang-gongque.md", titleKey: "dl_pack1_title" },
+        { file: "downloads/kungfu-shanshenbu.md", titleKey: "dl_pack2_title" },
+        { file: "downloads/mj-ink-dance.md", titleKey: "dl_pack3_title" },
+        { file: "downloads/3d-scene-compare.md", titleKey: "dl_pack4_title" },
+        { file: "downloads/cinnamoroll-reel.md", titleKey: "dl_pack5_title" },
+        { file: "downloads/xianxia-puppet.md", titleKey: "dl_pack6_title" },
+        { file: "downloads/mimi-dance.md", titleKey: "dl_pack7_title" },
+        { file: "downloads/cangjie-skill-promo.md", titleKey: "dl_pack8_title" },
+        { file: "downloads/fable-batman-dizzy.md", titleKey: "dl_pack9_title" },
+        { file: "downloads/3d-whitemodel-previz.md", titleKey: "dl_pack11_title" },
+        { file: "downloads/duoer-croissant.md", titleKey: "dl_pack12_title" },
+        { file: "downloads/street-reunion.md", titleKey: "dl_pack14_title" },
+        { file: "downloads/snow-combat-practice.md", titleKey: "dl_pack15_title" },
+        { file: "downloads/dark-city-duel.md", titleKey: "dl_pack16_title" },
+        { file: "downloads/pastoral-farming.md", titleKey: "dl_pack17_title" },
+        { file: "downloads/peach-wine-solo.md", titleKey: "dl_pack18_title" },
+        { file: "downloads/reset-music-mv.md", titleKey: "dl_pack19_title" }
+      ];
       function t(key) {
         try {
           var G = (typeof I18N !== "undefined") ? I18N : (window.I18N || null);
@@ -548,64 +471,81 @@
         return "";
       }
       var form = document.getElementById("dlForm");
-      var input = document.getElementById("dlCode");
+      var input = document.getElementById("dlEmail");
       var msg = document.getElementById("dlMsg");
-      var modal = document.getElementById("dlModal");
-      var packImg = document.getElementById("dlPackImg");
-      var packTitle = document.getElementById("dlPackTitle");
-      var packDesc = document.getElementById("dlPackDesc");
-      var dlBtn = document.getElementById("dlDownloadBtn");
-      var pendingFile = null;
-      function closeModal() { modal.hidden = true; }
-      document.getElementById("dlModalClose").addEventListener("click", closeModal);
-      modal.addEventListener("click", function (e) { if (e.target === modal) closeModal(); });
-      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden) closeModal(); });
-      dlBtn.addEventListener("click", function () {
-        if (!pendingFile) return;
+      var tokensEl = document.getElementById("dlTokens");
+      var listEl = document.getElementById("dlPackList");
+      var state = { email: null, plan: null, tokens: null };
+      function showMsg(text, isErr) {
+        msg.textContent = text || "";
+        msg.hidden = !text;
+        msg.className = "dl-msg" + (isErr ? " dl-err" : "");
+      }
+      function renderTokens() {
+        if (state.plan === "monthly") { tokensEl.textContent = t("dl_tokens_unlimited"); }
+        else if (state.tokens !== null && state.tokens !== undefined) { tokensEl.textContent = t("dl_tokens_left") + state.tokens; }
+        else { tokensEl.textContent = ""; }
+      }
+      function downloadFile(file) {
         var a = document.createElement("a");
-        a.href = pendingFile;
-        a.download = pendingFile.split("/").pop();
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-      });
-      function unlock(raw) {
-        var code = (raw || "").trim().toUpperCase();
-        var key = null;
-        try { key = code ? btoa(code) : null; } catch (e) { key = null; }
-        var pack = key ? VAULT[key] : null;
-        if (pack) {
-          msg.hidden = true;
-          pendingFile = pack.file;
-          packImg.src = pack.img;
-          packImg.alt = t(pack.titleKey);
-          packTitle.textContent = t(pack.titleKey);
-          packDesc.textContent = t(pack.descKey);
-          modal.hidden = false;
-          return true;
-        }
-        msg.textContent = t("dl_err");
-        msg.hidden = false;
-        return false;
+        a.href = file; a.download = file.split("/").pop();
+        document.body.appendChild(a); a.click(); a.remove();
+      }
+      function renderList() {
+        listEl.innerHTML = "";
+        PACKS.forEach(function (pack) {
+          var row = document.createElement("div");
+          row.className = "dl-pack-row";
+          var name = document.createElement("span");
+          name.className = "dl-pack-name";
+          name.textContent = t(pack.titleKey) || pack.file;
+          var btn = document.createElement("button");
+          btn.className = "btn btn-primary dl-pack-btn";
+          btn.type = "button";
+          btn.textContent = t("dl_download_btn") || "Download file";
+          btn.addEventListener("click", function () { onDownload(pack, btn); });
+          row.appendChild(name); row.appendChild(btn);
+          listEl.appendChild(row);
+        });
+      }
+      function onDownload(pack, btn) {
+        if (!state.email) return;
+        if (state.plan === "monthly") { downloadFile(pack.file); return; }
+        btn.disabled = true;
+        var url = ENDPOINT + "?action=consume&email=" + encodeURIComponent(state.email)
+          + "&pack=" + encodeURIComponent(pack.file.split("/").pop());
+        fetch(url).then(function (r) { return r.json(); }).then(function (j) {
+          btn.disabled = false;
+          if (j && j.ok) {
+            if (typeof j.tokens_left !== "undefined") state.tokens = j.tokens_left;
+            renderTokens();
+            downloadFile(pack.file);
+          } else if (j && j.reason === "no_tokens") {
+            showMsg(t("dl_no_tokens"), true);
+          } else { showMsg(t("dl_net_err"), true); }
+        }).catch(function () { btn.disabled = false; showMsg(t("dl_net_err"), true); });
       }
       form.addEventListener("submit", function (ev) {
         ev.preventDefault();
-        unlock(input.value);
+        var email = (input.value || "").trim();
+        if (!email) { showMsg(t("dl_err_notfound"), true); return; }
+        showMsg("", false);
+        listEl.innerHTML = ""; tokensEl.textContent = "";
+        fetch(ENDPOINT + "?email=" + encodeURIComponent(email)).then(function (r) { return r.json(); }).then(function (j) {
+          if (!j || !j.paid) { showMsg(t("dl_err_notfound"), true); state.email = null; return; }
+          state.email = email; state.plan = j.plan; state.tokens = j.tokens;
+          renderTokens(); renderList();
+        }).catch(function () { showMsg(t("dl_net_err"), true); });
       });
-      /* Deep link: ?code=XXXX#downloads pre-fills the code and unlocks automatically. */
+      /* Deep link: ?email=XXXX pre-fills the email box and unlocks automatically. */
       (function () {
-        var linkCode = null;
-        try {
-          linkCode = new URLSearchParams(window.location.search).get("code");
-          if (!linkCode && window.location.hash.indexOf("?") !== -1) {
-            linkCode = new URLSearchParams(window.location.hash.slice(window.location.hash.indexOf("?") + 1)).get("code");
-          }
-        } catch (e) { linkCode = null; }
-        if (linkCode && linkCode.trim()) {
-          input.value = linkCode.trim();
+        var em = null;
+        try { em = new URLSearchParams(window.location.search).get("email"); } catch (e) {}
+        if (em && em.trim()) {
+          input.value = em.trim();
           var dlSection = document.getElementById("downloads");
           if (dlSection && dlSection.scrollIntoView) dlSection.scrollIntoView();
-          unlock(linkCode);
+          form.dispatchEvent(new Event("submit", { cancelable: true }));
         }
       })();
       } /* end init */
@@ -678,7 +618,7 @@ Una animación por código de 44 segundos: el mismo caballero oscuro en 20 estil
       <button class="btn btn-primary btn-block" id="dlDownloadBtn" data-i18n="dl_download_btn">Download file</button>
     </div>
   </div>
-  <script src="i18n.js?v=20261023b"></script>
+  <script src="i18n.js?v=20261025a"></script>
 <script src="app.js?v=20261002b"></script>
 </body>
 </html>
