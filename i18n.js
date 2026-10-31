@@ -79,6 +79,8 @@ en: {
   dl_pack20_desc: "破産令嬢×宿敵：39ショットの甘いロマンスドラマ。",
   dl_pack20_title: "One Kiss for $100K… She Charged $1M",
   dl_pack20_desc: "Bankrupt heiress vs nemesis: 39-shot sweet romance drama.",
+  dl_pack21_title: "One Ring for the Priciest Prize",
+  dl_pack21_desc: "Princess vs State Preceptor: 10-shot sweet xianxia romance in a blossom garden.",
   dl_download_btn: "Download file",
 
   hero_badge: "Fresh prompt pack every day",
@@ -252,6 +254,8 @@ zh: {
   dl_pack19_desc: "嘲讽 OpenAI 音乐 MV，火力全开。",
   dl_pack20_title: "亲一口给十万",
   dl_pack20_desc: "破产千金×死对头：39镜甜宠短剧。",
+  dl_pack21_title: "套中了就是我的",
+  dl_pack21_desc: "公主×国师：10镜樱园套圈甜宠短剧。",
   dl_download_btn: "下载文件",
 
   hero_badge: "每天掉落一套新提示词",
@@ -423,6 +427,8 @@ ja: {
   dl_pack18_desc: "One woman, one sword, 10,000 enemies.",
   dl_pack19_title: "RESET Music MV",
   dl_pack19_desc: "A satirical music MV, full firepower.",
+  dl_pack21_title: "輪投げで射止めた国師",
+  dl_pack21_desc: "公主×国師：桜園の輪投げ10ショット、甘い仙侠ロマンス。",
   dl_download_btn: "ファイルをダウンロード",
 
   hero_badge: "毎日新しいプロンプトパック",
@@ -594,6 +600,8 @@ es: {
   dl_pack18_desc: "One woman, one sword, 10,000 enemies.",
   dl_pack19_title: "RESET Music MV",
   dl_pack19_desc: "A satirical music MV, full firepower.",
+  dl_pack21_title: "Un anillo para el premio mayor",
+  dl_pack21_desc: "Princesa contra Preceptor: romance xianxia dulce de 10 planos en un jardín de cerezos.",
   dl_download_btn: "Descargar archivo",
 
   hero_badge: "Nuevo pack de prompts cada día",
