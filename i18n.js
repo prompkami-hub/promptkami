@@ -81,6 +81,8 @@ en: {
   dl_pack20_desc: "Bankrupt heiress vs nemesis: 39-shot sweet romance drama.",
   dl_pack21_title: "One Ring for the Priciest Prize",
   dl_pack21_desc: "Princess vs State Preceptor: 10-shot sweet xianxia romance in a blossom garden.",
+  dl_pack22_title: "Escape With Your Best Friend",
+  dl_pack22_desc: "Best friends on the run: 48-shot modern escape romance, from boudoir plotting to an airport interception.",
   dl_download_btn: "Download file",
 
   hero_badge: "Fresh prompt pack every day",
@@ -256,6 +258,8 @@ zh: {
   dl_pack20_desc: "破产千金×死对头：39镜甜宠短剧。",
   dl_pack21_title: "套中了就是我的",
   dl_pack21_desc: "公主×国师：10镜樱园套圈甜宠短剧。",
+  dl_pack22_title: "带好闺蜜一起逃婚",
+  dl_pack22_desc: "闺蜜×逃婚：48镜现代都市拒联姻机场截人甜宠短剧。",
   dl_download_btn: "下载文件",
 
   hero_badge: "每天掉落一套新提示词",
@@ -429,6 +433,8 @@ ja: {
   dl_pack19_desc: "A satirical music MV, full firepower.",
   dl_pack21_title: "輪投げで射止めた国師",
   dl_pack21_desc: "公主×国師：桜園の輪投げ10ショット、甘い仙侠ロマンス。",
+  dl_pack22_title: "親友と一緒に逃婚",
+  dl_pack22_desc: "親友×逃婚：48ショットの現代逃婚ロマンス、空港での阻止まで。",
   dl_download_btn: "ファイルをダウンロード",
 
   hero_badge: "毎日新しいプロンプトパック",
@@ -602,6 +608,8 @@ es: {
   dl_pack19_desc: "A satirical music MV, full firepower.",
   dl_pack21_title: "Un anillo para el premio mayor",
   dl_pack21_desc: "Princesa contra Preceptor: romance xianxia dulce de 10 planos en un jardín de cerezos.",
+  dl_pack22_title: "Escapa con tu mejor amiga",
+  dl_pack22_desc: "Mejores amigas en fuga: romance moderno de 48 planos, de la conspiración al aeropuerto.",
   dl_download_btn: "Descargar archivo",
 
   hero_badge: "Nuevo pack de prompts cada día",
