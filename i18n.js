@@ -6,6 +6,15 @@
    ============================================================ */
 const I18N = {
 en: {
+  previous_available: "Previous available pack",
+  current30_label: "Today’s drop · #30",
+  current30_title: "The Masks Came Off.",
+  current30_desc: "Two runaway brides. Two masked strangers. No safe place to gossip.",
+  current30_starter: "Try the free English starter",
+  current30_language: "AI-generated historical-romance comedy. Chinese dialogue and on-screen captions.",
+  current30_download: "Download free starter",
+  current30_pending: "Full 61-shot Chinese guide: protected delivery pending. Not available to purchase for this drop yet.",
+
   meta_title: "promptkami — Daily AI Prompt Packs | One Effect. One Pack. Every Day.",
   meta_description: "Get the exact AI prompt behind today's viral video effect. Tested on Midjourney, DALL·E & more — copy, paste, generate. New pack drops daily.",
   lang_label: "Language",
@@ -197,6 +206,15 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
+  previous_available: "往期可用完整包",
+  current30_label: "今日掉落 · #30",
+  current30_title: "摘下面具，才发现是他。",
+  current30_desc: "两位逃婚新娘，两个蒙面陌生人。吐槽夫君也得小心。",
+  current30_starter: "试用免费英文入门样例",
+  current30_language: "AI生成古风爱情喜剧，中文对白与画面字幕。",
+  current30_download: "下载免费入门样例",
+  current30_pending: "61镜中文完整原稿：受保护交付待接入。本条暂不开放购买。",
+
   meta_title: "promptkami 提示词之神｜每日 AI 提示词包",
   meta_description: "拿到今天爆款视频同款 AI 提示词。Midjourney、DALL·E 等主流工具实测，复制粘贴即出同款效果。每天掉落一套，单包 $0.99 起。",
   lang_label: "语言",
@@ -384,6 +402,15 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
+  previous_available: "配信中の過去パック",
+  current30_label: "今日のドロップ · #30",
+  current30_title: "仮面が外れた瞬間。",
+  current30_desc: "逃げた二人の花嫁と、仮面の二人。夫の噂話にはご用心。",
+  current30_starter: "無料の英語スターターを試す",
+  current30_language: "AI生成の時代ロマンスコメディ。中国語の会話と画面字幕。",
+  current30_download: "無料スターターをダウンロード",
+  current30_pending: "全61ショットの中国語ガイド：保護された配信を準備中。この作品はまだ購入できません。",
+
   meta_title: "promptkami｜毎日更新のAIプロンプトパック",
   meta_description: "今日の話題動画と同じ効果を再現するAIプロンプト。Midjourneyなどで実測済み、コピペで生成できます。毎日新しいパックを追加。単品$0.99〜。",
   lang_label: "言語",
@@ -569,6 +596,15 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
+  previous_available: "Pack anterior disponible",
+  current30_label: "Drop de hoy · #30",
+  current30_title: "Cayeron las máscaras.",
+  current30_desc: "Dos novias fugitivas. Dos desconocidos enmascarados. Ningún lugar seguro para hablar.",
+  current30_starter: "Prueba la guía inicial gratuita en inglés",
+  current30_language: "Comedia romántica histórica generada con IA. Diálogo y subtítulos en chino.",
+  current30_download: "Descargar guía inicial gratis",
+  current30_pending: "Guía completa en chino de 61 planos: entrega protegida pendiente. Este drop aún no está a la venta.",
+
   meta_title: "promptkami｜Packs de prompts IA cada día",
   meta_description: "Obtén el prompt de IA exacto del efecto viral de hoy. Probado en Midjourney, DALL·E y más: copia, pega y genera. Un pack nuevo cada día desde $0.99.",
   lang_label: "Idioma",
