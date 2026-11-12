@@ -6,6 +6,15 @@
    ============================================================ */
 const I18N = {
 en: {
+  current31_label: "Today’s drop · #31",
+  current31_title: "Second Life. New Choice.",
+  current31_desc: "The same classroom. Memories of another life. This time, she refuses to chase him.",
+  current31_starter: "Try the free English starter",
+  current31_language: "AI-generated school-romance fiction. Chinese dialogue and on-screen captions.",
+  current31_download: "Download free starter",
+  current31_pending: "Full 53-shot Chinese guide: protected delivery pending. This drop is not available to purchase yet.",
+  previous30_label: "Previous drop · #30",
+
   previous_available: "Previous available pack",
   current30_label: "Today’s drop · #30",
   current30_title: "The Masks Came Off.",
@@ -206,6 +215,15 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
+  current31_label: "今日掉落 · #31",
+  current31_title: "重来一次，换个选择。",
+  current31_desc: "熟悉的教室，另一段人生的记忆。这一世，她决定不再追着他跑。",
+  current31_starter: "试用免费英文入门样例",
+  current31_language: "AI生成校园爱情虚构短片，中文对白与画面字幕。",
+  current31_download: "下载免费入门样例",
+  current31_pending: "53镜中文完整原稿：受保护交付待接入。本条暂不开放购买。",
+  previous30_label: "往期掉落 · #30",
+
   previous_available: "往期可用完整包",
   current30_label: "今日掉落 · #30",
   current30_title: "摘下面具，才发现是他。",
@@ -402,6 +420,15 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
+  current31_label: "今日のドロップ · #31",
+  current31_title: "二度目の人生。新しい選択。",
+  current31_desc: "同じ教室と、別の人生の記憶。今度は彼を追わないと決めた。",
+  current31_starter: "無料の英語スターターを試す",
+  current31_language: "AI生成の学園ロマンス。中国語の会話と画面字幕。",
+  current31_download: "無料スターターをダウンロード",
+  current31_pending: "全53ショットの中国語ガイド：保護された配信を準備中。この作品はまだ購入できません。",
+  previous30_label: "前回のドロップ · #30",
+
   previous_available: "配信中の過去パック",
   current30_label: "今日のドロップ · #30",
   current30_title: "仮面が外れた瞬間。",
@@ -596,6 +623,15 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
+  current31_label: "Drop de hoy · #31",
+  current31_title: "Otra vida. Otra elección.",
+  current31_desc: "La misma aula y recuerdos de otra vida. Esta vez decide no perseguirlo.",
+  current31_starter: "Prueba la guía inicial gratuita en inglés",
+  current31_language: "Ficción romántica escolar generada con IA. Diálogo y subtítulos en chino.",
+  current31_download: "Descargar guía inicial gratis",
+  current31_pending: "Guía completa en chino de 53 planos: entrega protegida pendiente. Este drop aún no está a la venta.",
+  previous30_label: "Drop anterior · #30",
+
   previous_available: "Pack anterior disponible",
   current30_label: "Drop de hoy · #30",
   current30_title: "Cayeron las máscaras.",
