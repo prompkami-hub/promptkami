@@ -6,6 +6,15 @@
    ============================================================ */
 const I18N = {
 en: {
+  current32_label: "Today’s drop · #32",
+  current32_title: "Her Fiancé Saw Everything.",
+  current32_desc: "One misunderstanding. Two men. The third wheel has nowhere to hide.",
+  current32_starter: "Try the free English starter",
+  current32_language: "AI-generated historical-romance fiction. Chinese dialogue and on-screen captions.",
+  current32_download: "Download free starter",
+  current32_pending: "The original Chinese guide covers 42 shots. The full guide is not available to purchase yet.",
+  previous31_label: "Previous drop · #31",
+
   current31_label: "Today’s drop · #31",
   current31_title: "Second Life. New Choice.",
   current31_desc: "The same classroom. Memories of another life. This time, she refuses to chase him.",
@@ -215,6 +224,15 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
+  current32_label: "今日掉落 · #32",
+  current32_title: "未婚夫，全看见了。",
+  current32_desc: "一场误会，两位男子。旁观的那个人无处可躲。",
+  current32_starter: "试用免费英文入门样例",
+  current32_language: "AI生成古风爱情虚构短片，中文对白与画面字幕。",
+  current32_download: "下载免费入门样例",
+  current32_pending: "中文完整原稿包含42个镜头，本条完整版暂不开放购买。",
+  previous31_label: "往期掉落 · #31",
+
   current31_label: "今日掉落 · #31",
   current31_title: "重来一次，换个选择。",
   current31_desc: "熟悉的教室，另一段人生的记忆。这一世，她决定不再追着他跑。",
@@ -420,6 +438,15 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
+  current32_label: "今日のドロップ · #32",
+  current32_title: "婚約者に全部見られた。",
+  current32_desc: "一つの誤解、二人の男。居合わせた彼には逃げ場がない。",
+  current32_starter: "無料の英語スターターを試す",
+  current32_language: "AI生成の時代劇ロマンス。中国語の会話と画面字幕。",
+  current32_download: "無料スターターをダウンロード",
+  current32_pending: "中国語の原ガイドは全42ショット。この作品の完全版はまだ購入できません。",
+  previous31_label: "前回のドロップ · #31",
+
   current31_label: "今日のドロップ · #31",
   current31_title: "二度目の人生。新しい選択。",
   current31_desc: "同じ教室と、別の人生の記憶。今度は彼を追わないと決めた。",
@@ -623,6 +650,15 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
+  current32_label: "Drop de hoy · #32",
+  current32_title: "Su prometido lo vio todo.",
+  current32_desc: "Un malentendido. Dos hombres. El tercero no tiene dónde esconderse.",
+  current32_starter: "Prueba la guía inicial gratuita en inglés",
+  current32_language: "Ficción romántica histórica generada con IA. Diálogo y subtítulos en chino.",
+  current32_download: "Descargar guía inicial gratis",
+  current32_pending: "La guía original en chino contiene 42 planos. La guía completa aún no está a la venta.",
+  previous31_label: "Drop anterior · #31",
+
   current31_label: "Drop de hoy · #31",
   current31_title: "Otra vida. Otra elección.",
   current31_desc: "La misma aula y recuerdos de otra vida. Esta vez decide no perseguirlo.",
