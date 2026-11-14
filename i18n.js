@@ -6,6 +6,16 @@
    ============================================================ */
 const I18N = {
 en: {
+  current001_label: "Today’s drop · #01",
+  current001_title: "Saved Skills. Now What?",
+  current001_desc: "Turn saved notes into a visual workflow story — a Cangjie promo design study.",
+  current001_starter: "Try the free English starter",
+  current001_language: "AI-assisted design reference. Chinese on-screen typography with English editorial commentary; not a full translation.",
+  current001_download: "Download free starter",
+  current001_full: "Existing Cangjie pack · code or member email",
+  current001_note: "The existing Cangjie pack remains in the Downloads library. Prices and payment links are unchanged.",
+  previous32_label: "Previous drop · #32",
+
   current32_label: "Today’s drop · #32",
   current32_title: "Her Fiancé Saw Everything.",
   current32_desc: "One misunderstanding. Two men. The third wheel has nowhere to hide.",
@@ -224,6 +234,16 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
+  current001_label: "今日掉落 · #01",
+  current001_title: "收藏技能之后，怎么用？",
+  current001_desc: "从收藏笔记到工作流叙事：仓颉宣传片视觉设计参考。",
+  current001_starter: "试用免费英文入门样例",
+  current001_language: "AI辅助设计参考；原片为中文视觉文字，竖版增加英文编辑解说，并非逐字翻译。",
+  current001_download: "下载免费入门样例",
+  current001_full: "已有仓颉包 · 提取码或会员邮箱",
+  current001_note: "已有仓颉提示词包继续保留在下载库，价格与收款链接不变。",
+  previous32_label: "往期掉落 · #32",
+
   current32_label: "今日掉落 · #32",
   current32_title: "未婚夫，全看见了。",
   current32_desc: "一场误会，两位男子。旁观的那个人无处可躲。",
@@ -438,6 +458,16 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
+  current001_label: "本日のドロップ · #01",
+  current001_title: "保存したスキル、その次は？",
+  current001_desc: "保存したメモをワークフローの物語へ。Cangjieのプロモデザイン参考。",
+  current001_starter: "無料の英語スターターを試す",
+  current001_language: "AI支援のデザイン参考。中国語の画面文字に英語の編集コメントを追加。全文翻訳ではありません。",
+  current001_download: "無料スターターをダウンロード",
+  current001_full: "既存Cangjieパック · コードまたは会員メール",
+  current001_note: "既存パックはダウンロードライブラリに残ります。価格と決済リンクは変更していません。",
+  previous32_label: "過去のドロップ · #32",
+
   current32_label: "今日のドロップ · #32",
   current32_title: "婚約者に全部見られた。",
   current32_desc: "一つの誤解、二人の男。居合わせた彼には逃げ場がない。",
@@ -650,6 +680,16 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
+  current001_label: "Drop de hoy · #01",
+  current001_title: "Guardaste habilidades. ¿Y ahora?",
+  current001_desc: "De notas guardadas a una historia visual de flujo de trabajo: estudio de diseño promocional Cangjie.",
+  current001_starter: "Prueba el inicio gratuito en inglés",
+  current001_language: "Referencia de diseño asistido por IA. Tipografía china con comentarios editoriales en inglés; no es una traducción completa.",
+  current001_download: "Descargar inicio gratuito",
+  current001_full: "Pack Cangjie existente · código o correo de miembro",
+  current001_note: "El pack existente sigue en la biblioteca de descargas. Precios y enlaces de pago sin cambios.",
+  previous32_label: "Drop anterior · #32",
+
   current32_label: "Drop de hoy · #32",
   current32_title: "Su prometido lo vio todo.",
   current32_desc: "Un malentendido. Dos hombres. El tercero no tiene dónde esconderse.",
