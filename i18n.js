@@ -6,6 +6,16 @@
    ============================================================ */
 const I18N = {
 en: {
+  current002_label: "Today’s drop · #02",
+  current002_title: "One Hero. Twenty Art Styles.",
+  current002_desc: "Keep the silhouette. Change the visual world — from antique prints to graphic posters and pop-art colour.",
+  current002_starter: "Try the free English starter",
+  current002_language: "AI-assisted design reference. Source artwork is preserved inside a vertical layout with English editorial commentary, not a full translation. Source reference: Monet.AI on Xiaohongshu. No official franchise affiliation.",
+  current002_download: "Download free starter",
+  current002_full: "Existing 20-style guide · code or member email",
+  current002_note: "The existing Chinese 20-shot guide remains in the Downloads library. Prices and payment links are unchanged.",
+  previous001_label: "Previous drop · #01",
+
   current001_label: "Today’s drop · #01",
   current001_title: "Saved Skills. Now What?",
   current001_desc: "Turn saved notes into a visual workflow story — a Cangjie promo design study.",
@@ -234,6 +244,16 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
+  current002_label: "今日掉落 · #02",
+  current002_title: "一个主角，二十种艺术风格",
+  current002_desc: "保持角色剪影，切换视觉世界：古典版画、图形海报与波普色彩。",
+  current002_starter: "试用免费英文起步样例",
+  current002_language: "AI辅助设计参考。竖版保留原横幅作品，另加英文编辑解说，并非逐字翻译。来源参考：小红书 Monet.AI。无官方品牌关联。",
+  current002_download: "下载免费样例",
+  current002_full: "现有二十风格手册 · 提取码或会员邮箱",
+  current002_note: "现有20镜中文手册保留于下载库，价格与收款链接不变。",
+  previous001_label: "往期掉落 · #01",
+
   current001_label: "今日掉落 · #01",
   current001_title: "收藏技能之后，怎么用？",
   current001_desc: "从收藏笔记到工作流叙事：仓颉宣传片视觉设计参考。",
@@ -458,6 +478,16 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
+  current002_label: "今日のドロップ · #02",
+  current002_title: "一人のヒーロー、20の画風",
+  current002_desc: "シルエットを保ち、版画・グラフィックポスター・ポップアートへ表現を切り替える。",
+  current002_starter: "無料の英語スターターを試す",
+  current002_language: "AIを活用したデザイン参考。元の横長作品を縦型画面に保持し、英語の編集コメントを追加。全文訳ではありません。参考元：小紅書のMonet.AI。公式ブランドとの提携はありません。",
+  current002_download: "無料スターターをダウンロード",
+  current002_full: "既存の20画風ガイド · コードまたは会員メール",
+  current002_note: "既存の全20ショット中国語ガイドはダウンロード一覧にあります。料金と決済リンクは変更していません。",
+  previous001_label: "前のドロップ · #01",
+
   current001_label: "本日のドロップ · #01",
   current001_title: "保存したスキル、その次は？",
   current001_desc: "保存したメモをワークフローの物語へ。Cangjieのプロモデザイン参考。",
@@ -680,6 +710,16 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
+  current002_label: "Drop de hoy · #02",
+  current002_title: "Un héroe. Veinte estilos.",
+  current002_desc: "Conserva la silueta y cambia el mundo visual: grabados, carteles gráficos y colores pop.",
+  current002_starter: "Prueba el ejemplo gratuito en inglés",
+  current002_language: "Referencia de diseño asistida por IA. El arte horizontal se conserva dentro de un formato vertical con comentarios editoriales en inglés; no es una traducción completa. Referencia: Monet.AI en Xiaohongshu. Sin afiliación oficial.",
+  current002_download: "Descargar ejemplo gratuito",
+  current002_full: "Guía existente de 20 estilos · código o correo de miembro",
+  current002_note: "La guía original en chino de 20 planos sigue en la biblioteca. Precios y enlaces de pago sin cambios.",
+  previous001_label: "Drop anterior · #01",
+
   current001_label: "Drop de hoy · #01",
   current001_title: "Guardaste habilidades. ¿Y ahora?",
   current001_desc: "De notas guardadas a una historia visual de flujo de trabajo: estudio de diseño promocional Cangjie.",
