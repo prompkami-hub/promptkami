@@ -6,6 +6,16 @@
    ============================================================ */
 const I18N = {
 en: {
+  current010_label: "Today’s drop · #10",
+  current010_title: "She Ordered a Croissant.",
+  current010_desc: "One simple order. One very unexpected green owl. Study a clear setup, consistent characters and a visual-comedy payoff.",
+  current010_starter: "Try the free English starter",
+  current010_language: "Animation reference for an AI-workflow study. Original animation, English on-screen captions and source audio are retained. Source: Super Duo Member / Xiaohongshu. Original AI authorship is unverified; no official Duolingo affiliation.",
+  current010_download: "Download free starter",
+  current010_full: "Existing 9-shot guide · code or member email",
+  current010_note: "The existing Chinese 9-shot guide remains in the Downloads library. The starter uses an original mascot; prices and payment links are unchanged.",
+  previous002_label: "Previous drop · #02",
+
   current002_label: "Today’s drop · #02",
   current002_title: "One Hero. Twenty Art Styles.",
   current002_desc: "Keep the silhouette. Change the visual world — from antique prints to graphic posters and pop-art colour.",
@@ -244,6 +254,16 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
+  current010_label: "今日掉落 · #10",
+  current010_title: "她点了一份可颂。",
+  current010_desc: "一次简单点单，一只意外出现的绿色猫头鹰。研究清晰铺垫、角色一致性与视觉喜剧的反转。",
+  current010_starter: "试用免费英文起步样例",
+  current010_language: "AI工作流研究所用的动画参考，保留原动画、英文画面字幕及原音。来源：小红书 超级多儿Super会员。原动画是否由AI生成尚未核实，无Duolingo官方关联。",
+  current010_download: "下载免费样例",
+  current010_full: "现有九镜手册 · 提取码或会员邮箱",
+  current010_note: "现有九镜中文手册保留于下载库；免费样例使用原创吉祥物，价格与收款链接不变。",
+  previous002_label: "往期掉落 · #02",
+
   current002_label: "今日掉落 · #02",
   current002_title: "一个主角，二十种艺术风格",
   current002_desc: "保持角色剪影，切换视觉世界：古典版画、图形海报与波普色彩。",
@@ -478,6 +498,16 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
+  current010_label: "今日のドロップ · #10",
+  current010_title: "注文したのはクロワッサン。",
+  current010_desc: "シンプルな注文に、予想外の緑のフクロウ。導入、キャラクターの一貫性、映像コメディの結末を研究します。",
+  current010_starter: "無料の英語スターターを試す",
+  current010_language: "AIワークフロー研究用のアニメ参考。元の映像・英語字幕・音声を保持。参考元：小紅書のSuper Duo Member。元映像のAI制作は未確認で、Duolingo公式との提携はありません。",
+  current010_download: "無料スターターをダウンロード",
+  current010_full: "既存の9ショットガイド · コードまたは会員メール",
+  current010_note: "既存の中国語9ショットガイドはダウンロード一覧にあります。スターターはオリジナルのマスコットを使用。料金と決済リンクは変更していません。",
+  previous002_label: "前のドロップ · #02",
+
   current002_label: "今日のドロップ · #02",
   current002_title: "一人のヒーロー、20の画風",
   current002_desc: "シルエットを保ち、版画・グラフィックポスター・ポップアートへ表現を切り替える。",
@@ -710,6 +740,16 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
+  current010_label: "Drop de hoy · #10",
+  current010_title: "Pidió un cruasán.",
+  current010_desc: "Un pedido sencillo. Un búho verde inesperado. Estudia la preparación, la coherencia de personajes y el remate visual.",
+  current010_starter: "Prueba el ejemplo gratuito en inglés",
+  current010_language: "Referencia de animación para estudiar flujos de IA. Se conservan la animación, los textos en inglés y el audio originales. Fuente: Super Duo Member / Xiaohongshu. No se ha verificado la autoría de IA del original; sin afiliación oficial con Duolingo.",
+  current010_download: "Descargar ejemplo gratuito",
+  current010_full: "Guía existente de 9 planos · código o correo de miembro",
+  current010_note: "La guía original en chino de 9 planos sigue en la biblioteca. El ejemplo usa una mascota original. Precios y enlaces de pago sin cambios.",
+  previous002_label: "Drop anterior · #02",
+
   current002_label: "Drop de hoy · #02",
   current002_title: "Un héroe. Veinte estilos.",
   current002_desc: "Conserva la silueta y cambia el mundo visual: grabados, carteles gráficos y colores pop.",
