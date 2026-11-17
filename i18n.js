@@ -6,6 +6,16 @@
    ============================================================ */
 const I18N = {
 en: {
+  current014_label: "Today’s drop · #14",
+  current014_title: "The Courtyard Was Quiet.",
+  current014_desc: "Snow, a single fighter and a red-energy strike. Study the shift from a close-up to overhead combat.",
+  current014_starter: "Try the free English starter",
+  current014_language: "AI-generated fantasy reference. This short crop keeps the action and source audio, adds English editorial text and removes the original prompt/reference-board area. Not real footage; no new filming.",
+  current014_download: "Download free starter",
+  current014_full: "Existing 15-shot guide · code or member email",
+  current014_note: "The full original Chinese 15-shot guide remains in Downloads. This starter is new English guidance, not a full translation. Reference: xhslink.cn/o/2bHMzJ8XSvV.",
+  previous010_label: "Previous drop · #10",
+
   current010_label: "Today’s drop · #10",
   current010_title: "She Ordered a Croissant.",
   current010_desc: "One simple order. One very unexpected green owl. Study a clear setup, consistent characters and a visual-comedy payoff.",
@@ -254,6 +264,16 @@ en: {
   footer_rights: "All rights reserved."
 },
 zh: {
+  current014_label: "今日掉落 · #14",
+  current014_title: "庭院原本很安静。",
+  current014_desc: "雪地、一位战士与赤色能量。研究近景切换至俯视战斗的镜头变化。",
+  current014_starter: "试用免费英文起步样例",
+  current014_language: "AI奇幻参考短片。裁切保留动作及原音，新增英文编辑说明，去除原提示词／参考板区域。非实拍，未新增拍摄。",
+  current014_download: "下载免费样例",
+  current014_full: "现有15镜手册 · 提取码或会员邮箱",
+  current014_note: "完整15镜中文原稿仍在下载库。免费英文样例是新写指导，并非全稿翻译。参考：xhslink.cn/o/2bHMzJ8XSvV。",
+  previous010_label: "往期掉落 · #10",
+
   current010_label: "今日掉落 · #10",
   current010_title: "她点了一份可颂。",
   current010_desc: "一次简单点单，一只意外出现的绿色猫头鹰。研究清晰铺垫、角色一致性与视觉喜剧的反转。",
@@ -498,6 +518,16 @@ zh: {
   footer_rights: "版权所有。"
 },
 ja: {
+  current014_label: "今日のドロップ · #14",
+  current014_title: "静かな中庭だった。",
+  current014_desc: "雪、一人の戦士、赤いエネルギー。接写から俯瞰の戦闘へ変わる構図を研究します。",
+  current014_starter: "無料の英語スターターを試す",
+  current014_language: "AIファンタジー参考。動きと元の音声を残してクロップし、英語の解説を追加。元のプロンプト・参考ボード部分を除去。実写や新規撮影ではありません。",
+  current014_download: "無料スターターをダウンロード",
+  current014_full: "既存の15ショットガイド · コードまたは会員メール",
+  current014_note: "元の中国語15ショットガイドはダウンロード一覧にあります。スターターは新たな英語ガイドで、全文翻訳ではありません。参考：xhslink.cn/o/2bHMzJ8XSvV。",
+  previous010_label: "前のドロップ · #10",
+
   current010_label: "今日のドロップ · #10",
   current010_title: "注文したのはクロワッサン。",
   current010_desc: "シンプルな注文に、予想外の緑のフクロウ。導入、キャラクターの一貫性、映像コメディの結末を研究します。",
@@ -740,6 +770,16 @@ ja: {
   footer_rights: "All rights reserved."
 },
 es: {
+  current014_label: "Drop de hoy · #14",
+  current014_title: "El patio estaba en silencio.",
+  current014_desc: "Nieve, una guerrera y un golpe de energía roja. Estudia el paso del primer plano al combate cenital.",
+  current014_starter: "Prueba el ejemplo gratuito en inglés",
+  current014_language: "Referencia de fantasía generada con IA. El recorte conserva la acción y el audio original, añade texto editorial en inglés y elimina el área original de indicaciones y referencias. No es metraje real ni una grabación nueva.",
+  current014_download: "Descargar ejemplo gratuito",
+  current014_full: "Guía existente de 15 planos · código o correo de miembro",
+  current014_note: "La guía original en chino de 15 planos sigue en Descargas. Este ejemplo es una guía nueva en inglés, no una traducción completa. Referencia: xhslink.cn/o/2bHMzJ8XSvV.",
+  previous010_label: "Drop anterior · #10",
+
   current010_label: "Drop de hoy · #10",
   current010_title: "Pidió un cruasán.",
   current010_desc: "Un pedido sencillo. Un búho verde inesperado. Estudia la preparación, la coherencia de personajes y el remate visual.",
